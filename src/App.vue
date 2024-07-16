@@ -1,9 +1,13 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
+  <div class="container-lg">
+    <div class="row">
+      <div class="prova"></div>
+      <div class="prova"></div>
+    </div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
@@ -11,11 +15,11 @@ import HelloWorld from './components/HelloWorld.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
+<style lang="scss">
+@use './styles/general.scss' as *;
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -26,5 +30,15 @@ import HelloWorld from './components/HelloWorld.vue'
 }
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
-}
+} */
+ .container-lg{
+  background-color: lightblue;
+  height: 600px;
+
+  .prova{
+    background-color: blueviolet;
+    height: 200px;
+    border: 2px solid white;
+  }
+ }
 </style>
