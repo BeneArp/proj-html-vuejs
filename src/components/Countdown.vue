@@ -10,6 +10,10 @@
     <section class="container">
         <div class="row">
             <h4>Start TOMORROW! Our biggest event of the year...</h4>
+            <div class="countdown">
+                01:22:40:45
+            </div>
+            <button> Get ticket</button>
 
         </div>
     </section>

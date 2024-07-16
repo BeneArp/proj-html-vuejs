@@ -2,12 +2,14 @@
 import AppFooter from './components/AppFooter.vue'
 import AppHeader from './components/AppHeader.vue';
 
+import AppHome from './pages/AppHome.vue';
 
 export default{
     name: 'App',
     components:{
       AppHeader,
       AppFooter,
+      AppHome,
     },
 
 }
@@ -16,7 +18,10 @@ export default{
 
 <template>
     <AppHeader/>
+    <AppHome />
+    
     <AppFooter/>
+
 </template>
 
 <style lang="scss">
