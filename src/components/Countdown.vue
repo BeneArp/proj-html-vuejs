@@ -9,12 +9,18 @@
     <!-- countdown inizio evento -->
     <section class="container">
         <div class="row">
-            <h4>Start TOMORROW! Our biggest event of the year...</h4>
-            <div class="countdown">
-                01:22:40:45
+            <!-- lable -->
+            <div class="col-5">
+                <h4>Start TOMORROW! Our biggest event of the year...</h4>
             </div>
-            <button> Get ticket</button>
-
+            <!-- timer -->
+            <div class="col-3">
+                <div class="countdown">01:22:40:45</div>
+            </div>
+            <!-- bottone biglietti -->
+            <div class="col-1">
+                <button> Get ticket</button>
+            </div>
         </div>
     </section>
 </template>
@@ -26,5 +32,9 @@
     section {
         background-color: blue;
         height: 100px;
+        .row {
+            justify-content: space-between;
+        }
+
     }
 </style>
