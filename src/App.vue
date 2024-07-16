@@ -1,11 +1,12 @@
 <script>
 import AppFooter from './components/AppFooter.vue'
-
+import AppHome from './pages/AppHome.vue';
 
 export default{
     name: 'App',
     components:{
       AppFooter,
+      AppHome,
     },
 
 }
@@ -13,7 +14,10 @@ export default{
 </script>
 
 <template>
+    <AppHome />
+    
     <AppFooter/>
+
 </template>
 
 <style lang="scss">
