@@ -1,10 +1,12 @@
 <script>
 import AppFooter from './components/AppFooter.vue'
+import AppHeader from './components/AppHeader.vue';
 
 
 export default{
     name: 'App',
     components:{
+      AppHeader,
       AppFooter,
     },
 
@@ -13,6 +15,7 @@ export default{
 </script>
 
 <template>
+    <AppHeader/>
     <AppFooter/>
 </template>
 
