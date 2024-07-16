@@ -1,18 +1,17 @@
-body{
+body {
     font-family: sans-serif;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-@import "node_modules/bootstrap/scss/bootstrap.scss"
-
+@import "node_modules/bootstrap/scss/bootstrap.scss";
