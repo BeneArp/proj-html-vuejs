@@ -6,11 +6,13 @@ img{
     max-width: 100%;
 }
 
-// .ms-container{
-//     max-width: 1270px;
-//     margin: 0 auto;
-//     padding: 0 1em;
-// }
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
 
 @import "node_modules/bootstrap/scss/bootstrap.scss"
 
