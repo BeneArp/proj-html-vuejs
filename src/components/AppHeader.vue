@@ -55,6 +55,12 @@ import Countdown from "./Countdown.vue";
                     </li>
                 </ul>
             </div>
+            <div class="col-2">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
         </nav>
     </header>
 </template>
@@ -62,15 +68,20 @@ import Countdown from "./Countdown.vue";
 <style lang="scss" scoped>
     @use '../styles/partials/variables' as *;
     @use '../styles/general.scss' as *;
+    @use "@fortawesome/fontawesome-free/css/all.min.css";
 
-    nav {
-            height: 100px;
-            background-color: pink;
+    header {
+        background-color: $light-grey;
+        nav {
+            height: 80px;
+            background-color: #ffffff;
             width: 100vw;
             justify-content: center;
             .menu {
                 display: flex;
             }
+        }
     }
+
 
 </style>
