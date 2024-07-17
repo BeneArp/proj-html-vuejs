@@ -13,7 +13,7 @@
 
 <template>
 
-    <section>
+    <section class="container-fluid">
 
         <img id="background-image" src="../assets/images/maxcoach-shape-14-1536x343.png" alt="decorazione sfondo">
         <img id="artitst-shape-left" src="../assets/images/artist-shape-01-600x577.png" alt="decorazione sfondo">

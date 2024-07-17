@@ -18,21 +18,20 @@
 
 <template>
 
-    <section>
+    <div>
         <div class="video">
             <a :href="video.url">
                 <img class="cover" :src="getImagePath(`../assets/${video.image}`)" alt="copertina video">
                 <img class="player" src="../assets/images/icon-youtube-play.png" alt="Logo YouTube">
             </a>      
         </div>
-    </section>
+    </div>
     <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/ElFJ1qcl74U?si=dQZSiZZ3BrYbXvYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 
 </template>
 
 <style lang="scss" scoped>
-    section{
-        padding: 4em 0;
+    div{
         max-width: 100vw;
         // debug
 
@@ -46,6 +45,7 @@
 
             .cover{
                 height: 100%;
+                width: 100%;
                 transition: all 2s;
 
                 &:hover{

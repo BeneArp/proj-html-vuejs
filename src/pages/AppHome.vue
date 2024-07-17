@@ -30,11 +30,33 @@ export default {
 
 <JumbotronAppHome />
 <ArtistCoachingAppHome/>
-<AppVideo :video="videoHomePage"/>
+<section class="video-link">
+    <img id="circle-decoration-left" src="../assets/images/maxcoach-shape-05.png" alt="">
+    <img id="circle-decoration-right" src="../assets/images/maxcoach-shape-12.png" alt="">
+    <AppVideo :video="videoHomePage"/>
+</section>
+
 
 </template>
 
 
 <style scoped lang="scss">
+    .video-link{
+        padding: 4em 0;
+        position: relative;
+        // debug
+
+        #circle-decoration-left{
+            position: absolute;
+            left: 27%;
+            top: 10%;
+        }
+
+        #circle-decoration-right{
+            position: absolute;
+            right: 26%;
+            bottom: 4%;
+        }
+    }
 
 </style>
