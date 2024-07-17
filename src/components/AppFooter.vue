@@ -89,12 +89,17 @@
 
             li{
                 margin-top: 0.8em;
+
             }
 
             i{
                 font-size: 30px;
                 margin: 1em 1.5em 1em 0;
                 color: #b4b4b4;
+
+                &:hover{
+                    color: $orange;
+                }
             }
 
             .ms-box{
@@ -116,6 +121,10 @@
             a{
                 text-decoration: none;
                 color: black;
+
+                &:hover{
+                    color: $orange;
+                }
             }
         }
     }
