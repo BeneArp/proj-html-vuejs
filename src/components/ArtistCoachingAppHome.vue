@@ -16,7 +16,7 @@
     <section>
 
         <img id="background-image" src="../assets/images/maxcoach-shape-14-1536x343.png" alt="decorazione sfondo">
-        <img id="artitst-shape-left" src="../assets/images/artist-shape-01.png" alt="decorazione sfondo">
+        <img id="artitst-shape-left" src="../assets/images/artist-shape-01-600x577.png" alt="decorazione sfondo">
         <img id="circle-background-decoration" src="../assets/images/maxcoach-shape-13.png" alt="decorazione sfondo">
 
         <div class="container-md">
@@ -41,6 +41,8 @@
     section{
         padding: 3em 0;
         position: relative;
+        overflow: hidden;
+        width: 100vw;
         // debug
         // height: 800px;
         // background-color: black;
@@ -64,7 +66,7 @@
         }
 
         #background-image{
-            z-index: 2;
+            z-index: 1;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -72,9 +74,11 @@
         }
 
         #artitst-shape-left{
+            height: 500px;
             transform: rotate(250deg);
             position: absolute;
             left: -8%;
+            top: 30px;
         }
 
         #circle-background-decoration{
