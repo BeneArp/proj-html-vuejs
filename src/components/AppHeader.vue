@@ -82,6 +82,7 @@ import Countdown from "./Countdown.vue";
                 li {
                     gap: 0.8rem;
                     align-items: center;
+                    transition: 3s;
 
                     a {
                         text-decoration: none;
@@ -93,6 +94,7 @@ import Countdown from "./Countdown.vue";
                         color: $black;
                     }
                     &:hover {
+                        animation:  duration timing-function delay iteration-count direction fill-mode;
                         border-bottom: solid $orange 0.1rem;
                         color: $orange;
                         a, i {
