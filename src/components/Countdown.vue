@@ -1,6 +1,16 @@
 <script>
     export default {
         name: 'Countdown',
+        data(){
+            return{
+                countdownEvent: [{
+                    title: 'Start TOMORROW! Our biggest event of the year...',
+                    time: '01:22:40:45',
+                    linkticket: '#'
+
+                }]
+            }
+        }
     }
 
 </script>
@@ -11,12 +21,12 @@
         <div class="row">
             <!-- lable -->
             <div class="col-6">
-                <h4>Start TOMORROW! Our biggest event of the year...</h4>
+                <h4></h4>
             </div>
             <!-- timer -->
             <div class="col-3 clock">
                 <i class="fa-regular fa-clock"></i>
-                <div class="countdown">01:22:40:45</div>
+                <div class="countdown"></div>
             </div>
             <!-- bottone biglietti -->
             <div class="col-3">
