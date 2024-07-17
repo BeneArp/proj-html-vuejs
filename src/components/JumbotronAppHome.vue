@@ -96,6 +96,9 @@ export default {
 <style scoped lang="scss">
 
 @use '../styles/partials/variables' as *;
+
+// import font titolo
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
     section {
         
         .row {
@@ -176,8 +179,9 @@ export default {
 
                 .styled-title {
                     color: $light-blue;
+                    font-family: "Bad Script", cursive;
                     font-style: italic;
-                    font-weight: 200;
+                    font-weight: bold;
                 }
 
                 .btn-primary {
