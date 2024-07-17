@@ -4,9 +4,9 @@ import JumbotronAppHome from '../components/JumbotronAppHome.vue';
 import ArtistCoachingAppHome from '../components/ArtistCoachingAppHome.vue';
 import MartinGarrixAppHome from '../components/MartinGarrixAppHome.vue';
 import SliderAppHome from '../components/SliderAppHome.vue';
-
 import AppVideo from '../components/AppVideo.vue';
 import OnlineCourses from '../components/OnlineCourses.vue';
+import TipsAppHome from '../components/TipsAppHome.vue'
 
 export default {
     name: 'AppHome',
@@ -16,6 +16,7 @@ export default {
         MartinGarrixAppHome,
         SliderAppHome,
         AppVideo,
+        TipsAppHome,
     },
 
     data(){
@@ -23,7 +24,6 @@ export default {
                 videoHomePage:{
                     image: "../assets/images/artist-video-poster.jpg",
                     url: "https://www.youtube.com/watch?v=ElFJ1qcl74U",
-                    messaggio: "maremma santa"
                 }
             }
         OnlineCourses
@@ -40,14 +40,15 @@ export default {
 <MartinGarrixAppHome />
 
 <SliderAppHome />
+
 <section class="video-link">
     <img id="circle-decoration-left" src="../assets/images/maxcoach-shape-05.png" alt="">
     <img id="circle-decoration-right" src="../assets/images/maxcoach-shape-12.png" alt="">
     <AppVideo :video="videoHomePage"/>
 </section>
 
-
 <OnlineCourses/>
+<TipsAppHome/>
 </template>
 
 
