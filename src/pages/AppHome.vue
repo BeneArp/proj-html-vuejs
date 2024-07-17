@@ -3,6 +3,8 @@
 import JumbotronAppHome from '../components/JumbotronAppHome.vue';
 import ArtistCoachingAppHome from '../components/ArtistCoachingAppHome.vue';
 import AppVideo from '../components/AppVideo.vue';
+import ArtistCoachingAppHome from '../components/ArtistCoachingAppHome.vue'
+import OnlineCourses from '../components/OnlineCourses.vue';
 
 export default {
     name: 'AppHome',
@@ -20,6 +22,7 @@ export default {
                     messaggio: "maremma santa"
                 }
             }
+        OnlineCourses
     }
 }
 
@@ -37,6 +40,7 @@ export default {
 </section>
 
 
+<OnlineCourses/>
 </template>
 
 

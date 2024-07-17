@@ -147,4 +147,52 @@ export const store = reactive({
         },
 
     ],
+
+    menuItems: [
+        {
+            home: [
+                ''
+            ]
+        },
+        {
+            pagesItem: [
+                {
+                    text: 'Start Here',
+                    url: '#'
+                },
+                {
+                    text: 'Success stori',
+                    url: '#'
+                },
+                {
+                    text: 'About me',
+                    url: '#'
+                },
+                {
+                    text: 'About us 01',
+                    url: '#'
+                },
+                {
+                    text: 'About us 01',
+                    url: '#'
+                },
+                {
+                    text: 'About us 01',
+                    url: '#'
+                },
+                {
+                    text: 'Contact me',
+                    url: '#'
+                },
+                {
+                    text: 'Contact us',
+                    url: '#'
+                },
+            ]
+        }
+
+
+    ]
+
+
 });

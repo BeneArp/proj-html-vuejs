@@ -24,11 +24,17 @@ import Countdown from "./Countdown.vue";
                 <div class="col-2 logo">
                     <img src="../assets/images/dark-logo.png" alt="logo" >
                 </div>
-                <div class="col-5 menu">
+                <div class="col-5">
                     <ul>
                         <li v-for="item in store.menuHeader">
                             <a href="#">{{item.text}}</a>
-                            <i class="fa-solid fa-chevron-down"></i>
+                            <div class="dropdown">
+                                <i class="fa-solid fa-chevron-down chevron button btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                <ul class="dropdown-menu" style="">
+                                    <li><a class="dropdown-item" v-for="listPage in store.pagesItem" href="#">{{listPage.text}}</a></li>
+                                </ul>
+                            </div>
+
                         </li>
 
                     </ul>
@@ -73,9 +79,8 @@ import Countdown from "./Countdown.vue";
                 margin: 0;
 
                 li {
-                    gap: 0.8rem;
+                    gap: 0.5rem;
                     align-items: center;
-
                     a {
                         text-decoration: none;
                         font-size: 1rem;
@@ -84,6 +89,10 @@ import Countdown from "./Countdown.vue";
                     i {
                         font-size: 0.6rem;
                         color: gray;
+                    }
+                    .chevron {
+                        background-color: transparent;
+                        border-style: none;
                     }
                     &:hover {
                         border-bottom: solid $orange 0.1rem;
@@ -106,7 +115,6 @@ import Countdown from "./Countdown.vue";
                         color:$orange ;
                     }
                 }
-                
             }
 
         }

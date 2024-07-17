@@ -18,15 +18,15 @@
 <template>  
     <!-- countdown inizio evento -->
     <section class="container">
-        <div class="row">
+        <div class="row"  v-for="event in countdownEvent">
             <!-- lable -->
             <div class="col-6">
-                <h4></h4>
+                <h4>{{ event.title }}</h4>
             </div>
             <!-- timer -->
             <div class="col-3 clock">
                 <i class="fa-regular fa-clock"></i>
-                <div class="countdown"></div>
+                <div class="countdown">{{ event.time }}</div>
             </div>
             <!-- bottone biglietti -->
             <div class="col-3">
