@@ -33,7 +33,9 @@ import Countdown from "./Countdown.vue";
                 </ul>
             </div>
             <div class="col-2 social">
-                <a v-for="icona in store.footerIcons" :href="icona.url"><i :class="icona.classi"></i></a>
+                <a v-for="icona in store.footerIcons" :href="icona.url">
+                    <i :class="icona.classi"></i>
+                </a>
             </div>
         </nav>
     </header>
@@ -90,8 +92,9 @@ import Countdown from "./Countdown.vue";
             .social {
                 text-align: end;
                 color: gray;
-                i {
-                    font-size: 1.1rem;
+                a {
+                    color: gray;
+                    font-size: 1.2rem;
                     margin-left: 0.9rem;
                     &:hover{
                         color:$orange ;
