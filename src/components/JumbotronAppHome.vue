@@ -67,7 +67,7 @@ export default {
             <!-- div con testo -->
             <div class="col-5 text-center">
                 <h2 class="styled-title">
-                    Hello, I'm Matin
+                    Hello, Im Matin
                 </h2>
                 <h1>
                     Artist Coaching And Mentoring Might Be for You.
@@ -98,7 +98,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 // import font titolo
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
     section {
         
         .row {
@@ -179,9 +179,9 @@ export default {
 
                 .styled-title {
                     color: $light-blue;
-                    font-family: "Bad Script", cursive;
-                    font-style: italic;
-                    font-weight: bold;
+                    font-family: Rossela Signature Font Demo, sans-serif;
+                    letter-spacing: 0.1em;
+                    font-size: 40px;
                 }
 
                 .btn-primary {
