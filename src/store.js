@@ -39,28 +39,28 @@ export const store = reactive({
             text: '"I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me."',
             name: 'Mina Hollace',
             job: '/ Freelancer',
-            image: 'src/assets/images/artist-testimonial-avatar-04.jpg'
+            image: '../assets/images/artist-testimonial-avatar-04.jpg'
         },
         {
             title: 'Professional team of specialists and passionate mentors at reach ',
             text: '"I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students."',
             name: 'Madley Pondor',
             job: '/ IT Specialist',
-            image: 'src/assets/images/artist-testimonial-avatar-01.jpg'
+            image: '../assets/images/artist-testimonial-avatar-01.jpg'
         },
         {
             title: 'The MaxCoach team works really hard to ensure high quality',
             text: '"I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation into effective methods to be adopted for learners of all levels."',
             name: 'Luvic Dubble',
             job: '/ Private Tutor',
-            image: 'src/assets/images/artist-testimonial-avatar-03.jpg'
+            image: '../assets/images/artist-testimonial-avatar-03.jpg'
         },
         {
             title: 'It s a choice of quality for people with special needs',
             text: '"I am a very strict person so I require everything to be organized and neat. Then, I ll be able to make things right and shine. MaxCoach guys just got me."',
             name: 'Florence Themes',
             job: '/ Multimedia Admin',
-            image: 'src/assets/images/artist-testimonial-avatar-02.jpg'
+            image: '../assets/images/artist-testimonial-avatar-02.jpg'
         },
 
     ],
