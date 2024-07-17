@@ -17,27 +17,30 @@ import Countdown from "./Countdown.vue";
 
 <template>  
     <header>
-        <Countdown/>
-        <!-- countdown inizio evento -->
-        <nav class="row ">
-            <div class="col-2 logo">
-                <img src="../assets/images/dark-logo.png" alt="logo" >
-            </div>
-            <div class="col-5 menu">
-                <ul>
-                    <li v-for="item in store.menuHeader">
-                        <a href="#">{{item.text}}</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </li>
+        <section class="container-fluid">
+            <Countdown/>
+            <!-- countdown inizio evento -->
+            <nav class="row ">
+                <div class="col-2 logo">
+                    <img src="../assets/images/dark-logo.png" alt="logo" >
+                </div>
+                <div class="col-5 menu">
+                    <ul>
+                        <li v-for="item in store.menuHeader">
+                            <a href="#">{{item.text}}</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
 
-                </ul>
-            </div>
-            <div class="col-2 social">
-                <a v-for="icona in store.footerIcons" :href="icona.url">
-                    <i :class="icona.classi"></i>
-                </a>
-            </div>
-        </nav>
+                    </ul>
+                </div>
+                <div class="col-2 social">
+                    <a v-for="icona in store.footerIcons" :href="icona.url">
+                        <i :class="icona.classi"></i>
+                    </a>
+                </div>
+            </nav>
+        </section>
+
     </header>
 </template>
 
@@ -48,6 +51,9 @@ import Countdown from "./Countdown.vue";
     header {
         background-color: $light-grey;
         width: 100vw;
+        .container {
+            width: 100vw;
+        }
         nav {
             padding: 0 4.5rem;
             height: 80px;
