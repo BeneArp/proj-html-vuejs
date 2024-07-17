@@ -1,37 +1,38 @@
-import {reactive} from 'vue'
+import { reactive } from 'vue'
+import AppHome from './pages/AppHome.vue';
 
 export const store = reactive({
 
     // home page dati
-        // ArtistCoaching card dati
-        ArtistCards:[
-            {
-                image:"../assets/images/artist-box-image-01.png",
-                title: 'Online Coures',
-                info: 'Online art coaching now offers you a very powerful way to redesign your artist mind.',
-            },
+    // ArtistCoaching card dati
+    ArtistCards: [
+        {
+            image: "../assets/images/artist-box-image-01.png",
+            title: 'Online Coures',
+            info: 'Online art coaching now offers you a very powerful way to redesign your artist mind.',
+        },
 
-            {
-                image:"../assets/images/artist-box-image-02.png",
-                title: 'One to One',
-                info: 'Getting the necessary clarity about the current state to help you improve your ability.',
-            },
+        {
+            image: "../assets/images/artist-box-image-02.png",
+            title: 'One to One',
+            info: 'Getting the necessary clarity about the current state to help you improve your ability.',
+        },
 
-            {
-                image:"../assets/images/artist-box-image-03.png",
-                title: 'Anywhere',
-                info: 'Access to valuable and portable program which allow you to setup and live anywhere you want.',
-            },
+        {
+            image: "../assets/images/artist-box-image-03.png",
+            title: 'Anywhere',
+            info: 'Access to valuable and portable program which allow you to setup and live anywhere you want.',
+        },
 
-            {
-                image:"../assets/images/artist-box-image-04.png",
-                title: 'On Time',
-                info: "Punctuality is our top priority because it's an essential criteria to assess a program quality.",
-            },
-        ],
+        {
+            image: "../assets/images/artist-box-image-04.png",
+            title: 'On Time',
+            info: "Punctuality is our top priority because it's an essential criteria to assess a program quality.",
+        },
+    ],
 
     // dati footer
-    footerAddres:[
+    footerAddres: [
         {
             text: '382 NE 191st St # 87394 Miami, FL 33179-3899',
             url: '#'
@@ -48,7 +49,7 @@ export const store = reactive({
         },
     ],
 
-    footerIcons:[
+    footerIcons: [
         {
             classi: 'fa-brands fa-square-facebook',
             url: '#'
@@ -70,7 +71,7 @@ export const store = reactive({
         },
     ],
 
-    footerExplore:[
+    footerExplore: [
         {
             text: 'Start here',
             url: '#'
@@ -97,7 +98,7 @@ export const store = reactive({
         },
     ],
 
-    footerInformation:[
+    footerInformation: [
         {
             text: 'Membership',
             url: '#'
@@ -117,5 +118,33 @@ export const store = reactive({
             text: 'Terms of services',
             url: '#'
         },
-    ]
+    ],
+
+    menuHeader: [
+        {
+            text: 'Home',
+            url: '#'
+        },
+        {
+            text: 'Pages',
+            url: '#'
+        },
+        {
+            text: 'Courses',
+            url: '#'
+        },
+        {
+            text: 'Features',
+            url: '#'
+        },
+        {
+            text: 'Blog',
+            url: '#'
+        },
+        {
+            text: 'Shop',
+            url: '#'
+        },
+
+    ],
 });
