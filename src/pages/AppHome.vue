@@ -2,12 +2,14 @@
 
 import JumbotronAppHome from '../components/JumbotronAppHome.vue';
 import ArtistCoachingAppHome from '../components/ArtistCoachingAppHome.vue'
+import OnlineCourses from '../components/OnlineCourses.vue';
 
 export default {
     name: 'AppHome',
     components: {
         JumbotronAppHome,
         ArtistCoachingAppHome,
+        OnlineCourses
     }
 }
 
@@ -18,6 +20,7 @@ export default {
 
 <JumbotronAppHome />
 <ArtistCoachingAppHome/>
+<OnlineCourses/>
 </template>
 
 
