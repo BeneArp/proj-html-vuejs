@@ -1,7 +1,14 @@
 <script>
+    import {store} from '../store'
 
     export default {
         name: "AppFooter",
+
+        data(){
+            return{
+                store,
+            }
+        }
     }
 
 
@@ -21,16 +28,10 @@
                         <!-- titolo elenco -->
                         <li><strong>Address</strong></li>
 
-                        <li>382 via a caso di Miami</li>
-                        <li>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</li>
-                        <!-- indirizzo mail -->
-                        <li><a href="#">support@maxcoach.com</a></li>
+                        <li v-for="link in store.footerAddres"><a :href="link.url">{{ link.text }}</a></li>
                         <!-- icone social -->
                         <li>
-                            <i class="fa-brands fa-square-facebook"></i>
-                            <i class="fa-brands fa-square-twitter"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-linkedin"></i>
+                            <a v-for="icona in store.footerIcons" :href="icona.url"><i :class="icona.classi"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -40,11 +41,7 @@
                         <!-- titolo elenco -->
                         <li><strong>Explore</strong></li>
 
-                        <li>Start here</li>
-                        <li>Success story</li>
-                        <li>Blog</li>
-                        <li>Courses</li>
-                        <li>Contact us</li>
+                        <li v-for="link in store.footerExplore"><a :href="link.url">{{ link.text }}</a></li>
                     </ul>
                 </div>
                 <!-- sezione informations -->
@@ -53,15 +50,12 @@
                         <!-- titolo elenco -->
                         <li><strong>Information</strong></li>
 
-                        <li>Membership</li>
-                        <li>Purchase guide</li>
-                        <li>Privacy policy</li>
-                        <li>Terms of services</li>
+                        <li v-for="link in store.footerInformation"><a :href="link.url">{{ link.text }}</a></li>
                     </ul>
                 </div>
                 <div class="col-3">
                     <span><strong>Instagram</strong></span>
-                    <span class="user">@maxcoach</span>
+                    <a href="#"><span class="user">@maxcoach</span></a>
                 </div>
             </div>
 
@@ -81,7 +75,6 @@
     footer{
         background-color: $white;
         // debug
-        border: 2px solid red;
 
         .container-lg{
             // debug
@@ -105,7 +98,7 @@
             }
 
             .ms-box{
-                margin-top: 3em;
+                margin-top: 2.5em;
                 color: #b4b4b4;
                 font-size: 14px;
             }
@@ -117,6 +110,12 @@
 
             .user{
                 color: $orange;
+                margin-left: 0.5em;
+            }
+
+            a{
+                text-decoration: none;
+                color: black;
             }
         }
     }
