@@ -5,6 +5,8 @@ import ArtistCoachingAppHome from '../components/ArtistCoachingAppHome.vue';
 import MartinGarrixAppHome from '../components/MartinGarrixAppHome.vue';
 import SliderAppHome from '../components/SliderAppHome.vue';
 
+import AppVideo from '../components/AppVideo.vue';
+import OnlineCourses from '../components/OnlineCourses.vue';
 
 export default {
     name: 'AppHome',
@@ -12,7 +14,19 @@ export default {
         JumbotronAppHome,
         ArtistCoachingAppHome,
         MartinGarrixAppHome,
-        SliderAppHome
+        SliderAppHome,
+        AppVideo,
+    },
+
+    data(){
+            return{
+                videoHomePage:{
+                    image: "../assets/images/artist-video-poster.jpg",
+                    url: "https://www.youtube.com/watch?v=ElFJ1qcl74U",
+                    messaggio: "maremma santa"
+                }
+            }
+        OnlineCourses
     }
 }
 
@@ -26,9 +40,34 @@ export default {
 <MartinGarrixAppHome />
 
 <SliderAppHome />
+<section class="video-link">
+    <img id="circle-decoration-left" src="../assets/images/maxcoach-shape-05.png" alt="">
+    <img id="circle-decoration-right" src="../assets/images/maxcoach-shape-12.png" alt="">
+    <AppVideo :video="videoHomePage"/>
+</section>
+
+
+<OnlineCourses/>
 </template>
 
 
 <style scoped lang="scss">
+    .video-link{
+        padding: 4em 0;
+        position: relative;
+        // debug
+
+        #circle-decoration-left{
+            position: absolute;
+            left: 27%;
+            top: 10%;
+        }
+
+        #circle-decoration-right{
+            position: absolute;
+            right: 26%;
+            bottom: 4%;
+        }
+    }
 
 </style>

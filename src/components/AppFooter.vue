@@ -74,6 +74,8 @@
 
     footer{
         background-color: $white;
+        max-width: 100vw;
+        overflow: hidden;
         // debug
 
         .container-lg{
@@ -103,7 +105,7 @@
             }
 
             .ms-box{
-                margin-top: 2.5em;
+                margin: 2em 0;
                 color: #b4b4b4;
                 font-size: 14px;
             }
