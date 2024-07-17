@@ -1,11 +1,13 @@
 <script>
 
 import JumbotronAppHome from '../components/JumbotronAppHome.vue';
+import ArtistCoachingAppHome from '../components/ArtistCoachingAppHome.vue'
 
 export default {
     name: 'AppHome',
     components: {
         JumbotronAppHome,
+        ArtistCoachingAppHome,
     }
 }
 
@@ -15,6 +17,7 @@ export default {
 <template>
 
 <JumbotronAppHome />
+<ArtistCoachingAppHome/>
 </template>
 
 
