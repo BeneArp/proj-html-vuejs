@@ -1,6 +1,7 @@
 <script>
 import {store} from '../store'
 import Countdown from "./Countdown.vue";
+
     export default {
         name: 'AppHeader',
         components: {
@@ -52,7 +53,8 @@ import Countdown from "./Countdown.vue";
 
 <style lang="scss" scoped>
     @use '../styles/partials/variables' as *;
-    @use "@fortawesome/fontawesome-free/css/all.min.css";
+    @use "@fortawesome/fontawesome-free/css/all.min.css" as *;
+    // @use '../styles/general.scss' as *;
 
     header {
         background-color: $light-grey;

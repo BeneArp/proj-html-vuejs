@@ -4,7 +4,6 @@ import JumbotronAppHome from '../components/JumbotronAppHome.vue';
 import ArtistCoachingAppHome from '../components/ArtistCoachingAppHome.vue';
 import MartinGarrixAppHome from '../components/MartinGarrixAppHome.vue';
 import SliderAppHome from '../components/SliderAppHome.vue';
-
 import AppVideo from '../components/AppVideo.vue';
 import OnlineCourses from '../components/OnlineCourses.vue';
 
@@ -16,6 +15,7 @@ export default {
         MartinGarrixAppHome,
         SliderAppHome,
         AppVideo,
+        OnlineCourses,
     },
 
     data(){
@@ -26,7 +26,6 @@ export default {
                     messaggio: "maremma santa"
                 }
             }
-        OnlineCourses
     }
 }
 
