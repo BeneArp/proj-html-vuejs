@@ -1,7 +1,12 @@
 <script>
+    import ArtistCoachingCard from './ArtistCoachingCard.vue';
 
     export default{
         name: 'ArtistCoachingAppHome',
+
+        components:{
+            ArtistCoachingCard,
+        }
     }
 
 </script>
@@ -22,10 +27,7 @@
             </div>
 
             <div class="row">
-                <div class="col-3"></div>
-                <div class="col-3"></div>
-                <div class="col-3"></div>
-                <div class="col-3"></div>
+                <ArtistCoachingCard/>
             </div>
 
         </div>
@@ -40,11 +42,11 @@
         padding: 3em 0;
         position: relative;
         // debug
-        height: 800px;
-        background-color: black;
+        // height: 800px;
+        // background-color: black;
 
         .container-md{
-            border: 2px solid black;
+            // border: 2px solid black;
             height: 100%;
 
             .section-title{
@@ -59,11 +61,6 @@
                 }
             }
 
-            [class*="col-"]{
-                // debug
-                border: 2px solid black;
-                height: 300px;
-            }
         }
 
         #background-image{

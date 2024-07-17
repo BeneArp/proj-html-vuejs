@@ -2,6 +2,34 @@ import {reactive} from 'vue'
 
 export const store = reactive({
 
+    // home page dati
+        // ArtistCoaching card dati
+        ArtistCards:[
+            {
+                image:"../assets/images/artist-box-image-01.png",
+                title: 'Online Coures',
+                info: 'Online art coaching now offers you a very powerful way to redesign your artist mind.',
+            },
+
+            {
+                image:"../assets/images/artist-box-image-02.png",
+                title: 'One to One',
+                info: 'Getting the necessary clarity about the current state to help you improve your ability.',
+            },
+
+            {
+                image:"../assets/images/artist-box-image-03.png",
+                title: 'Anywhere',
+                info: 'Access to valuable and portable program which allow you to setup and live anywhere you want.',
+            },
+
+            {
+                image:"../assets/images/artist-box-image-04.png",
+                title: 'On Time',
+                info: "Punctuality is our top priority because it's an essential criteria to assess a program quality.",
+            },
+        ],
+
     // dati footer
     footerAddres:[
         {
