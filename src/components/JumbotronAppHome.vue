@@ -100,6 +100,7 @@ export default {
 // import font titolo
 // @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
     section {
+        background-color: $light-grey;
         
         .row {
             height: 600px;
@@ -135,12 +136,14 @@ export default {
 
                 #artist-shape-01{
                     width: 45%;
+                    height: 600px;
                     position: absolute;
                     right: 3%;
                     top: 0;
                     
                     img {
                         max-width: 100%;
+                        max-height: 100%;
                     }
 
                 }
