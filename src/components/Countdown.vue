@@ -50,7 +50,7 @@
             }
             
             button {
-                background-color: #EF6F31;
+                background-color: $orange;
                 border-style: none;
                 border-radius: 0.2rem;
                 padding: 0.2rem 1.5rem;
