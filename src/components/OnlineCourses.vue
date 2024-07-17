@@ -14,8 +14,8 @@
         <div class="row">
 
             <div class="col-3">
-                <div>
-                    <img src="../assets/images/artist-course-08-480x480.jpg" alt="">
+                <div class="img-art">
+                    <img src="../assets/images/artist-course-08-480x480.jpg" class="artwork" alt="">
                 </div>
                 <div class="info-art">
                     <h4 class="price">$18.00</h4>
@@ -33,8 +33,8 @@
                 </div>
             </div>
             <div class="col-3">
-                <div>
-                    <img src="../assets/images/artist-course-07-480x480.jpg" alt="">
+                <div class="img-art">
+                    <img src="../assets/images/artist-course-07-480x480.jpg" class="artwork" alt="">
                 </div>
                 <div class="info-art">
                     <h4 class="price">$18.00</h4>
@@ -50,11 +50,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="col-3">
-                <div>
-                    <img src="../assets/images/artist-course-06-480x480.jpg" alt="">
+                <div class="img-art">
+                    <img src="../assets/images/artist-course-06-480x480.jpg" class="artwork" alt="">
                 </div>
                 <div class="info-art">
                     <h4 class="price">$18.00</h4>
@@ -70,11 +69,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="col-3">
-                <div>
-                    <img src="../assets/images/artist-course-05-480x480.jpg" alt="">
+                <div class="img-art">
+                    <img src="../assets/images/artist-course-05-480x480.jpg" class="artwork" alt="">
                 </div>
                 <div class="info-art">
                     <h4 class="price">$18.00</h4>
@@ -90,11 +88,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="col-3">
-                <div>
-                    <img src="../assets/images/artist-course-04-480x480.jpg" alt="">
+                <div class="img-art">
+                    <img src="../assets/images/artist-course-04-480x480.jpg" class="artwork" alt="">
                 </div>
                 <div class="info-art">
                     <h4 class="price">$18.00</h4>
@@ -110,11 +107,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="col-3">
-                <div>
-                    <img src="../assets/images/artist-course-03-480x480.jpg" alt="">
+                <div class="img-art">
+                    <img src="../assets/images/artist-course-03-480x480.jpg" class="artwork" alt="">
                 </div>
                 <div class="info-art">
                     <h4 class="price">$18.00</h4>
@@ -130,11 +126,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="col-3">
-                <div>
-                    <img src="../assets/images/artist-course-02-480x480.jpg" alt="">
+                <div class="img-art">
+                    <img src="../assets/images/artist-course-02-480x480.jpg" class="artwork" alt="">
                 </div>
                 <div class="info-art">
                     <h4 class="price">$18.00</h4>
@@ -150,11 +145,10 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="col-3">
-                <div>
-                    <img src="../assets/images/artist-course-01-480x480.jpg" alt="">
+                <div class="img-art">
+                    <img src="../assets/images/artist-course-01-480x480.jpg" class="artwork" alt="">
                 </div>
                 <div class="info-art">
                     <h4 class="price">$18.00</h4>
@@ -213,6 +207,16 @@
                     }
                 }
             }
+            .img-art {
+                width: 100%;
+                .artwork {
+                transition: all 2s;
+                &:hover{
+                    scale: 1.1;
+                }
+            }
+            }
+
         }
         .title{
             margin: 3rem auto;
