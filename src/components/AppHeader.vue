@@ -1,9 +1,15 @@
 <script>
+import {store} from '../store'
 import Countdown from "./Countdown.vue";
     export default {
         name: 'AppHeader',
         components: {
             Countdown,
+        },
+            data(){
+            return{
+                store,
+            }
         }
     }
 
@@ -19,37 +25,17 @@ import Countdown from "./Countdown.vue";
             </div>
             <div class="col-5 menu">
                 <ul>
-                    <li>
-                        <a href="#">Home</a>
+                    <li v-for="item in store.menuHeader">
+                        <a href="#">{{item.text}}</a>
                         <i class="fa-solid fa-chevron-down"></i>
                     </li>
-                    <li>
-                        <a href="#">Home</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </li>
-                    <li>
-                        <a href="#">Home</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </li>
-                    <li>
-                        <a href="#">Home</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </li>
-                    <li>
-                        <a href="#">Home</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </li>
-                    <li>
-                        <a href="#">Home</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </li>
+
                 </ul>
             </div>
             <div class="col-2 social">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                <a v-for="icona in store.footerIcons" :href="icona.url">
+                    <i :class="icona.classi"></i>
+                </a>
             </div>
         </nav>
     </header>
@@ -63,10 +49,11 @@ import Countdown from "./Countdown.vue";
         background-color: $light-grey;
         width: 100vw;
         nav {
-            padding: 0 4rem;
+            padding: 0 4.5rem;
             height: 80px;
             background-color: $white;
             justify-content: space-between;
+            align-items: center;
             .logo {
                 width: 12rem;
             }
@@ -82,7 +69,6 @@ import Countdown from "./Countdown.vue";
                 li {
                     gap: 0.8rem;
                     align-items: center;
-                    transition: 3s;
 
                     a {
                         text-decoration: none;
@@ -91,10 +77,9 @@ import Countdown from "./Countdown.vue";
                     }
                     i {
                         font-size: 0.6rem;
-                        color: $black;
+                        color: gray;
                     }
                     &:hover {
-                        animation:  duration timing-function delay iteration-count direction fill-mode;
                         border-bottom: solid $orange 0.1rem;
                         color: $orange;
                         a, i {
@@ -106,6 +91,16 @@ import Countdown from "./Countdown.vue";
             }
             .social {
                 text-align: end;
+                color: gray;
+                a {
+                    color: gray;
+                    font-size: 1.2rem;
+                    margin-left: 0.9rem;
+                    &:hover{
+                        color:$orange ;
+                    }
+                }
+                
             }
 
         }

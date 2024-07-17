@@ -56,6 +56,9 @@
                 padding: 0.2rem 1.5rem;
                 color: #ffffff;
                 font-weight: bold;
+                &:hover{
+                    background-color: $light-blue;
+                }
             }
         }
 
