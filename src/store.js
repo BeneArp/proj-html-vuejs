@@ -1,8 +1,9 @@
 import { reactive } from 'vue'
 import AppHome from './pages/AppHome.vue';
+import AdvantageCard from './components/AppAboutComponents/AdvantageCard.vue';
 
 export const store = reactive({
-    // home page dati
+    // HOME PAGE DATI
     // ArtistCoaching card dati
     ArtistCards: [
         {
@@ -50,7 +51,39 @@ export const store = reactive({
         },
     ],
 
-    // dati footer
+    // ABOUT US DATI
+    AdvantagesCards:[
+        {
+            icon: 'fa-regular fa-flag',
+            title: 'Life Mentoring',
+            text: 'Get some healing and guidance for you future career and vocational directions.',
+            url: '#',
+            direction: 'Start here'
+        },
+        {
+            icon: 'fa-solid fa-gear',
+            title: 'Self Development',
+            text: 'Develop skills for career of various majors including computer science & language competence.',
+            url: '#',
+            direction: 'Discover now'
+        },
+        {
+            icon: 'fa-regular fa-life-ring',
+            title: 'Ask Consultancy',
+            text: "Make a reservation with our special consultant to learn what's best for your dream career.",
+            url: '#',
+            direction: 'Get Free Quote'
+        },
+        {
+            icon: 'fa-solid fa-desktop',
+            title: 'Remote Learning',
+            text: 'Learn from anywhere in the world on desktop, tablet or mobile phone with an Internet connection.',
+            url: '#',
+            direction: 'Start now'
+        },
+    ],
+
+    // FOOTER DATI
     footerAddres: [
         {
             text: '382 NE 191st St # 87394 Miami, FL 33179-3899',

@@ -1,5 +1,6 @@
 <script>
     import BreadCrumbs from '../components/AppAboutComponents/BreadCrumbs.vue'
+    import Advantages from '../components/AppAboutComponents/Advantages.vue'
 
     export default{
         name: "AppAbout",
@@ -23,6 +24,8 @@
 
         components:{
             BreadCrumbs,
+            Advantages,
+
         }
     }
 
@@ -31,6 +34,7 @@
 <template>
 
     <BreadCrumbs :info="BreadCrumbsPath"/>
+    <Advantages/>
 
 </template>
 
