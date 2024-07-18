@@ -13,11 +13,11 @@ import * as bootstrap from 'bootstrap'
         components: {
             Countdown,
         },
-            data(){
-            return{
-                store,
-                // router,
-            }
+        data(){
+        return{
+            store,
+            // router,
+        }
         }
     }
 

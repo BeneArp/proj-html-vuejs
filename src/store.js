@@ -85,7 +85,7 @@ export const store = reactive({
     ],
 
     // ABOUT US DATI
-    AdvantagesCards:[
+    AdvantagesCards: [
         {
             icon: 'fa-regular fa-flag',
             title: 'Life Mentoring',
@@ -205,6 +205,7 @@ export const store = reactive({
         },
     ],
 
+    // dati dedl menu header
     menuHeader: [
         {
             text: 'Home',
@@ -302,6 +303,84 @@ export const store = reactive({
         },
 
     ],
+
+    // dati latesst online couses
+
+    lessonsOnline: [
+        {
+            imageCor: 'src/assets/images/artist-course-08-480x480.jpg',
+            price: '$18.00',
+            className: 'The Acrilic Paintin Academy',
+            iconLessons: 'fa-regular fa-file-lines',
+            numberLessons: '4 Lessons',
+            iconStudent: 'fa-regular fa-user',
+            numberStudent: '50 Students',
+        },
+        {
+            imageCor: 'src/assets/images/artist-course-07-480x480.jpg',
+            price: '$21.00',
+            className: 'Drawing and Shading: Complete Course',
+            iconLessons: 'fa-regular fa-file-lines',
+            numberLessons: '14 Lessons',
+            iconStudent: 'fa-regular fa-user',
+            numberStudent: '50 Students',
+        },
+        {
+            imageCor: 'src/assets/images/artist-course-06-480x480.jpg',
+            price: '$19.00',
+            className: 'The Color Theory for Digital Artist',
+            iconLessons: 'fa-regular fa-file-lines',
+            numberLessons: '7 Lessons',
+            iconStudent: 'fa-regular fa-user',
+            numberStudent: '50 Students',
+        },
+        {
+            imageCor: 'src/assets/images/artist-course-05-480x480.jpg',
+            price: '$35.00',
+            className: 'Ultimate Guide to Digital Sketching for Beginner',
+            iconLessons: 'fa-regular fa-file-lines',
+            numberLessons: '2 Lessons',
+            iconStudent: 'fa-regular fa-user',
+            numberStudent: '50 Students',
+        },
+        {
+            imageCor: 'src/assets/images/artist-course-04-480x480.jpg',
+            price: '$19.00',
+            className: 'Portrait Drawing The Smart Way',
+            iconLessons: 'fa-regular fa-file-lines',
+            numberLessons: '14 Lessons',
+            iconStudent: 'fa-regular fa-user',
+            numberStudent: '50 Students',
+        },
+        {
+            imageCor: 'src/assets/images/artist-course-03-480x480.jpg',
+            price: '$19.00',
+            className: 'Mastering Watercolor Painting from Beginner',
+            iconLessons: 'fa-regular fa-file-lines',
+            numberLessons: '9 Lessons',
+            iconStudent: 'fa-regular fa-user',
+            numberStudent: '50 Students',
+        },
+        {
+            imageCor: 'src/assets/images/artist-course-02-480x480.jpg',
+            price: '$25.00',
+            className: 'The Art & Science of Drawing',
+            iconLessons: 'fa-regular fa-file-lines',
+            numberLessons: '4 Lessons',
+            iconStudent: 'fa-regular fa-user',
+            numberStudent: '50 Students',
+        },
+        {
+            imageCor: 'src/assets/images/artist-course-01-480x480.jpg',
+            price: '$22.00',
+            className: 'The Colored Pencil Drawing Course',
+            iconLessons: 'fa-regular fa-file-lines',
+            numberLessons: '6 Lessons',
+            iconStudent: 'fa-regular fa-user',
+            numberStudent: '50 Students',
+        },
+
+    ]
 
 
 });
