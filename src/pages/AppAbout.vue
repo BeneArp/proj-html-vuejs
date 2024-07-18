@@ -3,6 +3,7 @@
     import Advantages from '../components/AppAboutComponents/Advantages.vue'
     import AppVideo from '../components/AppVideo.vue'
     import AboutSlider from '../components/AppAboutComponents/AboutSlider.vue'
+    import Partners from '../components/AppAboutComponents/Partners.vue'
 
     export default{
         name: "AppAbout",
@@ -34,6 +35,7 @@
             Advantages,
             AppVideo,
             AboutSlider,
+            Partners,
         }
     }
 
@@ -52,6 +54,7 @@
 
     <section>
         <AboutSlider/>
+        <Partners/>
     </section>
 
 </template>

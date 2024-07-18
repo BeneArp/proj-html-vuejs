@@ -157,6 +157,36 @@ export const store = reactive({
         },
     ],
 
+    partners:[
+        {
+            image: "../../assets/images/client-logo-01.png"
+        },
+
+        {
+            image: "../../assets/images/client-logo-02.png"
+        },
+
+        {
+            image: "../../assets/images/client-logo-03.png"
+        },
+
+        {
+            image: "../../assets/images/client-logo-04.png"
+        },
+
+        {
+            image: "../../assets/images/client-logo-05.png"
+        },
+
+        {
+            image: "../../assets/images/client-logo-06.png"
+        },
+
+        {
+            image: "../../assets/images/client-logo-07.png"
+        },
+    ],
+
     // FOOTER DATI
     footerAddres: [
         {

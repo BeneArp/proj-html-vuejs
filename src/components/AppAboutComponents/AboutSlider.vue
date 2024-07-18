@@ -75,10 +75,6 @@
 @use '../../styles/partials/mixins' as *;
 @use "@fortawesome/fontawesome-free/css/all.min.css";
 
-    .container-fluid{
-        overflow: hidden;
-    }
-
     #slider-title{
         padding: 5em 0 3em 0;
         text-align: center;
@@ -88,8 +84,7 @@
 
     #slider-wrapper{
         overflow: hidden;
-        // debug
-        height: 600px;
+        padding: 2em 0;
 
         .row{
             transition: all 1s;
