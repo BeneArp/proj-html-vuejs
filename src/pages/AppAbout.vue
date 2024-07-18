@@ -2,6 +2,8 @@
     import BreadCrumbs from '../components/AppAboutComponents/BreadCrumbs.vue'
     import Advantages from '../components/AppAboutComponents/Advantages.vue'
     import AppVideo from '../components/AppVideo.vue'
+    import StatisticsAppAbout from '../components/AppAboutComponents/StatisticsAppAbout.vue';
+
 
     export default{
         name: "AppAbout",
@@ -32,6 +34,7 @@
             BreadCrumbs,
             Advantages,
             AppVideo,
+            StatisticsAppAbout,
 
         }
     }
@@ -48,6 +51,8 @@
         <img id="circle-violet-decoration" src="../assets/images/maxcoach-shape-12.png" alt="">
         <AppVideo :video="AboutVideo"/>
     </section>
+
+    <StatisticsAppAbout />
 
 </template>
 
