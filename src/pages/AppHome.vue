@@ -34,25 +34,32 @@ export default {
 
 
 <template>
+    <section class="wrapper">
+        <JumbotronAppHome />
+        <ArtistCoachingAppHome/>
+        <MartinGarrixAppHome />
 
-<JumbotronAppHome />
-<ArtistCoachingAppHome/>
-<MartinGarrixAppHome />
+        <SliderAppHome />
 
-<SliderAppHome />
+        <section class="video-link">
+            <img id="circle-decoration-left" src="../assets/images/maxcoach-shape-05.png" alt="">
+            <img id="circle-decoration-right" src="../assets/images/maxcoach-shape-12.png" alt="">
+            <AppVideo :video="videoHomePage"/>
+        </section>
 
-<section class="video-link">
-    <img id="circle-decoration-left" src="../assets/images/maxcoach-shape-05.png" alt="">
-    <img id="circle-decoration-right" src="../assets/images/maxcoach-shape-12.png" alt="">
-    <AppVideo :video="videoHomePage"/>
-</section>
+        <OnlineCourses/>
+        <TipsAppHome/>
+    </section>
 
-<OnlineCourses/>
-<TipsAppHome/>
 </template>
 
 
 <style scoped lang="scss">
+    .wrapper{
+        max-width: 100vw;
+        overflow: hidden;
+    }
+
     .video-link{
         padding: 4em 0;
         position: relative;
