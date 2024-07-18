@@ -40,7 +40,7 @@
 
 <template>
 
-    <section>
+    <section class="advantages-info">
         <BreadCrumbs :info="BreadCrumbsPath"/>
         <Advantages/>
 
@@ -54,10 +54,11 @@
 <style lang="scss" scoped>
     @use '../styles/partials/variables' as *;
 
-    section{
-        background: $light-grey;
+    .advantages-info{
+        background: linear-gradient($white, $light-grey);
         padding: 2em 0 4em 0;
         position: relative;
+        
 
         #circle-green-decoration{
             position: absolute;
