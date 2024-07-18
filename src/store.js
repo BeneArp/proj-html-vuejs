@@ -1,9 +1,9 @@
 import { reactive } from 'vue'
 import AppHome from './pages/AppHome.vue';
+import AdvantageCard from './components/AppAboutComponents/AdvantageCard.vue';
 
 export const store = reactive({
-
-    // home page dati
+    // HOME PAGE DATI
     // ArtistCoaching card dati
     ArtistCards: [
         {
@@ -31,6 +31,39 @@ export const store = reactive({
         },
     ],
 
+
+    // struttura dati SliderAppHome
+    testimonials: [
+        {
+            title: 'High level of efficiency and scientific teaching methods',
+            text: '"I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me."',
+            name: 'Mina Hollace',
+            job: '/ Freelancer',
+            image: '../src/assets/images/artist-testimonial-avatar-04.jpg'
+        },
+        {
+            title: 'Professional team of specialists and passionate mentors at reach ',
+            text: '"I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students."',
+            name: 'Madley Pondor',
+            job: '/ IT Specialist',
+            image: '../src/assets/images/artist-testimonial-avatar-01.jpg'
+        },
+        {
+            title: 'The MaxCoach team works really hard to ensure high quality',
+            text: '"I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation into effective methods to be adopted for learners of all levels."',
+            name: 'Luvic Dubble',
+            job: '/ Private Tutor',
+            image: '../src/assets/images/artist-testimonial-avatar-03.jpg'
+        },
+        {
+            title: 'It s a choice of quality for people with special needs',
+            text: '"I am a very strict person so I require everything to be organized and neat. Then, I ll be able to make things right and shine. MaxCoach guys just got me."',
+            name: 'Florence Themes',
+            job: '/ Multimedia Admin',
+            image: '../src/assets/images/artist-testimonial-avatar-02.jpg'
+        },
+
+    ],
     // TipsSideCard dati
     SideCards: [
         {
@@ -51,7 +84,39 @@ export const store = reactive({
         },
     ],
 
-    // dati footer
+    // ABOUT US DATI
+    AdvantagesCards:[
+        {
+            icon: 'fa-regular fa-flag',
+            title: 'Life Mentoring',
+            text: 'Get some healing and guidance for you future career and vocational directions.',
+            url: '#',
+            direction: 'Start here'
+        },
+        {
+            icon: 'fa-solid fa-gear',
+            title: 'Self Development',
+            text: 'Develop skills for career of various majors including computer science & language competence.',
+            url: '#',
+            direction: 'Discover now'
+        },
+        {
+            icon: 'fa-regular fa-life-ring',
+            title: 'Ask Consultancy',
+            text: "Make a reservation with our special consultant to learn what's best for your dream career.",
+            url: '#',
+            direction: 'Get Free Quote'
+        },
+        {
+            icon: 'fa-solid fa-desktop',
+            title: 'Remote Learning',
+            text: 'Learn from anywhere in the world on desktop, tablet or mobile phone with an Internet connection.',
+            url: '#',
+            direction: 'Start now'
+        },
+    ],
+
+    // FOOTER DATI
     footerAddres: [
         {
             text: '382 NE 191st St # 87394 Miami, FL 33179-3899',

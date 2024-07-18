@@ -85,7 +85,8 @@ import * as bootstrap from 'bootstrap'
 
     header {
         background-color: $light-grey;
-        width: 100vw;
+        max-width: 100vw;
+        overflow: hidden;
         .container {
             width: 100vw;
         }
