@@ -2,14 +2,18 @@
 import AppFooter from './components/AppFooter.vue'
 import AppHeader from './components/AppHeader.vue';
 
-import AppHome from './pages/AppHome.vue';
+// import AppHome from './pages/AppHome.vue';
+// import AppAbout from './pages/AppAbout.vue'
+// import AppContacts from './pages/AppContacts.vue'
 
 export default{
     name: 'App',
     components:{
       AppHeader,
       AppFooter,
-      AppHome,
+    //   AppHome,
+    //   AppAbout,
+    //   AppContacts,
     },
 
 }
@@ -18,8 +22,8 @@ export default{
 
 <template>
     <AppHeader/>
-    <AppHome />
-    
+    <router-view></router-view>
+        <!-- <AppHome /> -->
     <AppFooter/>
 
 </template>

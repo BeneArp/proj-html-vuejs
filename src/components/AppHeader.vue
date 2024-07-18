@@ -47,6 +47,19 @@ import Countdown from "./Countdown.vue";
                 </div>
             </nav>
         </section>
+        <div>
+            <ul>
+                <router-link :to="{ name: 'home' }">
+                    Home
+                </router-link>
+                <router-link :to="{ name: 'about us' }">
+                    About Us
+                </router-link>
+                <router-link :to="{ name: 'contact me' }">
+                    Contact Me
+                </router-link>
+            </ul>
+        </div>
 
     </header>
 </template>

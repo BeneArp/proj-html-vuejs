@@ -1,14 +1,14 @@
 <script>
 
     export default{
-        name: "AppAbout"
+        name: "NotFound"
     }
 
 </script>
 
 <template>
 
-    <h2>About</h2>
+    <h2>Page non Found 404</h2>
 
 </template>
 
