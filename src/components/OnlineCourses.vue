@@ -114,6 +114,9 @@
                 }
                 .artwork-title {
                     margin: 1.3rem 0;
+                    &:hover{
+                        color: $orange;
+                    }
                 }
                 .icon-lessons {
                     font-size: 0.9rem;
