@@ -2,6 +2,11 @@
 import {store} from '../store'
 import Countdown from "./Countdown.vue";
 // import { router } from '../router';
+// // Import our custom CSS
+// import '../scss/styles.scss';
+
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap'
 
     export default {
         name: 'AppHeader',
@@ -28,7 +33,7 @@ import Countdown from "./Countdown.vue";
                     <img src="../assets/images/dark-logo.png" alt="logo" >
                 </div>
                 <div class="col-5">
-                    <ul>
+                    <!-- <ul>
                         <li v-for="item in store.menuHeader">
                             <a href="#">{{item.text}}</a>
                             <div class="dropdown">
@@ -40,7 +45,17 @@ import Countdown from "./Countdown.vue";
 
                         </li>
 
-                    </ul>
+                    </ul> -->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                        </button>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-2 social">
                     <a v-for="icona in store.footerIcons" :href="icona.url">
@@ -74,6 +89,7 @@ import Countdown from "./Countdown.vue";
 
 <style lang="scss" scoped>
     @use '../styles/partials/variables' as *;
+    @use '../styles/general.scss';
     @use "@fortawesome/fontawesome-free/css/all.min.css" as *;
     // @use '../styles/general.scss' as *;
 
