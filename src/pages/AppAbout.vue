@@ -4,6 +4,8 @@
     import AppVideo from '../components/AppVideo.vue'
     import AboutSlider from '../components/AppAboutComponents/AboutSlider.vue'
     import Partners from '../components/AppAboutComponents/Partners.vue'
+    import StatisticsAppAbout from '../components/AppAboutComponents/StatisticsAppAbout.vue';
+
 
     export default{
         name: "AppAbout",
@@ -36,6 +38,8 @@
             AppVideo,
             AboutSlider,
             Partners,
+            StatisticsAppAbout,
+
         }
     }
 
@@ -56,6 +60,7 @@
         <AboutSlider/>
         <Partners/>
     </section>
+    <StatisticsAppAbout />
 
 </template>
 

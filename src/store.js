@@ -85,7 +85,7 @@ export const store = reactive({
     ],
 
     // ABOUT US DATI
-    AdvantagesCards:[
+    AdvantagesCards: [
         {
             icon: 'fa-regular fa-flag',
             title: 'Life Mentoring',
@@ -191,6 +191,35 @@ export const store = reactive({
         {
             image: "../../assets/images/client-logo-07.png",
             url: '#'
+        },
+    ],
+
+
+    // struttura dati per statistiche crescenti
+    stats: [
+        {
+            data: 1926,
+            attribute: '',
+            title: 'FINISHED SESSIONS',
+            counter: 0,
+        },
+        {
+            data: 3092,
+            attribute: '+',
+            title: 'ONLINE ENROLLMENT',
+            counter: 0,
+        },
+        {
+            data: 200,
+            attribute: '',
+            title: 'SUBJECTS TAUGHT',
+            counter: 0,
+        },
+        {
+            data: 100,
+            attribute: '%',
+            title: 'SATISFACTION RATE',
+            counter: 0,
         },
     ],
 
