@@ -120,7 +120,7 @@ export const store = reactive({
         },
     ],
 
-    AboutSlider:[
+    AboutSlider: [
         {
             image: "../../assets/images/testimonial-avata-02.jpg",
             name: "MINA HOLLACE",
@@ -157,7 +157,7 @@ export const store = reactive({
         },
     ],
 
-    partners:[
+    partners: [
         {
             image: "../../assets/images/client-logo-01.png",
             url: '#'
@@ -487,6 +487,43 @@ export const store = reactive({
             numberStudent: '50 Students',
         },
 
+    ],
+
+    upcomingEvent: [
+        {
+            firstRow: [
+                {
+                    imageEvent: 'src/assets/images/artist-event-04-250x300.jpg',
+                    dataEvent: 'Apr 22, 2021 ',
+                    nameEvent: 'Storytelling Workshop',
+                    location: ' Texas, US '
+                },
+                {
+                    imageEvent: 'src/assets/images/artist-event-03-250x300.jpg',
+                    dataEvent: 'Oct 10, 2020 ',
+                    nameEvent: 'Painting Art Contest 2020',
+                    location: ' New York, US '
+                },
+
+            ],
+        },
+        {
+            secondRow: [
+                {
+                    imageEvent: 'src/assets/images/artist-event-02-250x300.jpg ',
+                    dataEvent: 'Nov 23, 2020 ',
+                    nameEvent: 'International Art Fair 2020',
+                    location: 'Hamburg, Germany'
+                },
+                {
+                    imageEvent: 'src/assets/images/artist-event-01-250x300.jpg',
+                    dataEvent: 'Dec 15, 2020',
+                    nameEvent: 'Street Performance: Call for Artist',
+                    location: 'Illinois, US'
+                },
+
+            ],
+        },
     ]
 
 

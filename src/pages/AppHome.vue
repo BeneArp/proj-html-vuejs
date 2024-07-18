@@ -8,6 +8,7 @@ import SliderAppHome from '../components/SliderAppHome.vue';
 import OnlineCourses from '../components/OnlineCourses.vue';
 import TipsAppHome from '../components/TipsAppHome.vue'
 import NewsletterAppHome from '../components/NewsletterAppHome.vue';
+import AppUpcomingEvent from '../components/AppUpcomingEvent.vue';
 
 
 export default {
@@ -21,6 +22,7 @@ export default {
         OnlineCourses,
         TipsAppHome,
         NewsletterAppHome,
+        AppUpcomingEvent,
     },
 
     data(){
@@ -51,7 +53,7 @@ export default {
         <SliderAppHome />
         <OnlineCourses/>
         <TipsAppHome/>
-
+        <AppUpcomingEvent/>
         <NewsletterAppHome />
     </section>
 
