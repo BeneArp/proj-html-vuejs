@@ -2,7 +2,6 @@ import { reactive } from 'vue'
 import AppHome from './pages/AppHome.vue';
 
 export const store = reactive({
-
     // home page dati
     // ArtistCoaching card dati
     ArtistCards: [

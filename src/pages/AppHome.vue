@@ -21,12 +21,12 @@ export default {
     },
 
     data(){
-            return{
-                videoHomePage:{
-                    image: "../assets/images/artist-video-poster.jpg",
-                    url: "https://www.youtube.com/watch?v=ElFJ1qcl74U",
-                }
+        return{
+            videoHomePage:{
+                image: "../assets/images/artist-video-poster.jpg",
+                url: "https://www.youtube.com/watch?v=ElFJ1qcl74U",
             }
+        }
     }
 }
 
