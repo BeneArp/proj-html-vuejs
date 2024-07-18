@@ -31,7 +31,7 @@ import * as bootstrap from 'bootstrap'
                     <img src="../assets/images/dark-logo.png" alt="logo" >
                 </div>
                 <div class="col-5">
-                    <!-- <ul>
+                    <ul>
                         <li v-for="item in store.menuHeader">
                             <a href="#">{{item.text}}</a>
                             <div class="dropdown">
@@ -43,8 +43,8 @@ import * as bootstrap from 'bootstrap'
 
                         </li>
 
-                    </ul> -->
-                    <div class="dropdown">
+                    </ul>
+                    <!-- <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Dropdown button
                         </button>
@@ -53,7 +53,7 @@ import * as bootstrap from 'bootstrap'
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-2 social">
                     <a v-for="icona in store.footerIcons" :href="icona.url">
@@ -123,6 +123,7 @@ import * as bootstrap from 'bootstrap'
                     }
                     .chevron {
                         background-color: transparent;
+                        color: gray;
                         border-style: none;
                     }
                     &:hover {

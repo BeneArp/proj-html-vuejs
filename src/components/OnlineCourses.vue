@@ -7,13 +7,17 @@
 
 <template>
     <section class="container-fluid">
-        <!-- immagini di background -->       
+               
         <section class="container">
+            <!-- immagini di background -->
             <img id="shape-left" src="../assets/images/artist-shape-01-600x577.png" alt="">
+            <img id="shape-right" src="../assets/images/artist-shape-01-600x577.png" alt="">
+            <!-- titolo della sezione -->
             <div class="col-4 title">
                     <h3>Artist coaching</h3>
                     <h2>Latest Online Courses</h2>
             </div>
+            <!-- cards delle opere d'arte -->
             <div class="row">
 
                 <div class="col-3">
@@ -181,10 +185,18 @@
         overflow: hidden;
         #shape-left {
             height: 600px;
-            transform: rotate();
+            transform: rotate(-10deg);
             position: absolute;
-            left: 0;
+            left: -300px;
             bottom: 200px;
+            filter: invert(100%);
+        }
+        #shape-right {
+            height: 680px;
+            transform: rotate(250deg);
+            position: absolute;
+            right: -350px;
+            top: 200px;
         }
     }
     .container {
@@ -214,7 +226,7 @@
                 width: 90%;
                 padding: 2rem;
                 &:hover {
-                    border: solid $orange 0.1rem;
+                    outline: solid $orange 0.1rem;
                 }
                 .price, .artwork-title  {
                     font-size: 1.3rem;
@@ -238,6 +250,7 @@
             }
             .img-art {
                 width: 100%;
+                overflow: hidden;
                 .artwork {
                 transition: all 2s;
                     &:hover{
