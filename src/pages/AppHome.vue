@@ -7,6 +7,8 @@ import AppVideo from '../components/AppVideo.vue';
 import SliderAppHome from '../components/SliderAppHome.vue';
 import OnlineCourses from '../components/OnlineCourses.vue';
 import TipsAppHome from '../components/TipsAppHome.vue'
+import NewsletterAppHome from '../components/NewsletterAppHome.vue';
+
 
 export default {
     name: 'AppHome',
@@ -18,6 +20,7 @@ export default {
         SliderAppHome,
         OnlineCourses,
         TipsAppHome,
+        NewsletterAppHome,
     },
 
     data(){
@@ -40,17 +43,18 @@ export default {
         <ArtistCoachingAppHome/>
         <MartinGarrixAppHome />
 
-        <SliderAppHome />
-
         <section class="video-link">
             <img id="circle-decoration-left" src="../assets/images/maxcoach-shape-05.png" alt="">
             <img id="circle-decoration-right" src="../assets/images/maxcoach-shape-12.png" alt="">
             <AppVideo :video="videoHomePage"/>
         </section>
-
+        <SliderAppHome />
         <OnlineCourses/>
         <TipsAppHome/>
+
+        <NewsletterAppHome />
     </section>
+
 </template>
 
 
