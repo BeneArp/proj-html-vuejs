@@ -5,6 +5,7 @@
     import AboutSlider from '../components/AppAboutComponents/AboutSlider.vue'
     import Partners from '../components/AppAboutComponents/Partners.vue'
     import StatisticsAppAbout from '../components/AppAboutComponents/StatisticsAppAbout.vue';
+    import NewsLetter from '../components/AppAboutComponents/NewsLetter.vue';
 
 
     export default{
@@ -39,6 +40,7 @@
             AboutSlider,
             Partners,
             StatisticsAppAbout,
+            NewsLetter,
 
         }
     }
@@ -61,6 +63,7 @@
         <Partners/>
     </section>
     <StatisticsAppAbout />
+    <NewsLetter/>
 
 </template>
 
