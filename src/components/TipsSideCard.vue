@@ -1,45 +1,42 @@
 <script>
+    import { store } from '../store';
 
     export default{
         name: "TipsSideCard",
+
+        data(){
+            return{
+                store,
+            }
+        },
+
+        methods:{
+            getImagePath: function(imgPath){
+                return new URL(imgPath, import.meta.url).href;
+            }
+        }
     }
 
 </script>
 
 <template>
 
-    <div class="col-3  align-self-end g-0">
-        <a href="#">
+    <div class="col-3 g-0" v-for="(post, index) in store.SideCards">
+        <a :href="post.url">
             <!-- immagine -->
             <div>
-                <img src="../assets/images/artist-blog-03-480x356.jpeg" alt="">
+                <img :src="getImagePath(`../assets/${post.image}`)" alt="">
             </div>
             <!-- descrizione -->
             <div class="post-description">
-                <span>ARTIST</span>
-                <h5>Brush Strokes Energize Trees in Paintings</h5>
-                <span><i class="fa-regular fa-calendar"></i>May 15, 2020</span>
-                <span><i class="fa-regular fa-eye"></i>6,901 views</span>
+                <span>{{post.lable}}</span>
+                <h5>{{post.title}}</h5>
+                <span><i class="fa-regular fa-calendar"></i>{{post.date}}</span>
+                <span><i class="fa-regular fa-eye"></i>{{post.views}}</span>
             </div>
         </a>    
     </div>
-
-    <div class="col-3 g-0">
-        <a href="#">
-            <!-- immagine -->
-            <div>
-                <img src="../assets/images/artist-blog-01-480x356.jpg" alt="">
-            </div>
-            <!-- descrizione -->
-            <div class="post-description">
-                <span>ARTIST</span>
-                <h5>Pocket-Sized Notebooks Hold Miniature Paintings</h5>
-                <span><i class="fa-regular fa-calendar"></i>May 15, 2020</span>
-                <span><i class="fa-regular fa-eye"></i>9,824 views</span>
-            </div>
-        </a>    
-    </div>
-
+    
 </template>
 
 <style lang="scss" scoped>
@@ -67,6 +64,10 @@
                 i{
                     margin-right: 0.5em;
                 }
+            }
+
+            h5:hover{
+                color: $orange;
             }
         }
 

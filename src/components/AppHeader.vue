@@ -1,6 +1,7 @@
 <script>
 import {store} from '../store'
 import Countdown from "./Countdown.vue";
+// import { router } from '../router';
 // // Import our custom CSS
 // import '../scss/styles.scss';
 
@@ -15,6 +16,7 @@ import * as bootstrap from 'bootstrap'
             data(){
             return{
                 store,
+                // router,
             }
         }
     }
@@ -64,15 +66,21 @@ import * as bootstrap from 'bootstrap'
         </section>
         <div>
             <ul>
-                <router-link :to="{ name: 'home' }">
-                    Home
-                </router-link>
-                <router-link :to="{ name: 'about us' }">
-                    About Us
-                </router-link>
-                <router-link :to="{ name: 'contact me' }">
-                    Contact Me
-                </router-link>
+                <li>
+                    <router-link :to="{ name: 'home'}">
+                        Home
+                    </router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'about us' }">
+                        About Us
+                    </router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'contact me' }">
+                        Contact Me
+                    </router-link>
+                </li>
             </ul>
         </div>
 

@@ -31,6 +31,26 @@ export const store = reactive({
         },
     ],
 
+    // TipsSideCard dati
+    SideCards:[
+        {
+            url: '#',
+            image: '../assets/images/artist-blog-03-480x356.jpeg',
+            lable: 'ARTIST',
+            title: 'Brush Strokes Energize Trees in Paintings',
+            date: 'May 15, 2020',
+            views: '6,901 views'
+        },
+        {
+            url: '#',
+            image: '../assets/images/artist-blog-01-480x356.jpg',
+            lable: 'ARTIST',
+            title: 'Pocket-Sized Notebooks Hold Miniature Paintings',
+            date: 'May 15, 2020',
+            views: '9,824 views'
+        },
+    ],
+
     // dati footer
     footerAddres: [
         {
