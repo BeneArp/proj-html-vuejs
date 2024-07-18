@@ -33,7 +33,7 @@ import * as bootstrap from 'bootstrap'
                     <img src="../assets/images/dark-logo.png" alt="logo" >
                 </div>
                 <div class="col-5">
-                    <ul>
+                    <ul class="title-menu">
                         <li v-for="item in store.menuHeader">
                             <a class="title-link" href="#">{{item.text}}</a>
                             <div class="dropdown">
@@ -101,11 +101,11 @@ import * as bootstrap from 'bootstrap'
             .logo {
                 width: 12rem;
             }
-            ul, li {
+            .title-menu, .title-menu li {
                 display: flex;
                 padding-bottom: 0.3rem;
             }
-            ul {
+            .title-menu {
                 width: 100%;
                 justify-content: space-between;
                 margin: 0;
@@ -113,7 +113,8 @@ import * as bootstrap from 'bootstrap'
                 li {
                     gap: 0.5rem;
                     align-items: center;
-                    a {
+                    transition: all 1s;
+                    .title-link {
                         text-decoration: none;
                         font-size: 1rem;
                         color: $black;
@@ -126,7 +127,7 @@ import * as bootstrap from 'bootstrap'
                         background-color: transparent;
                         color: gray;
                         border-style: none;
-                        &:hover, &:active{
+                        &:hover{
                             background-color: transparent;
                             color: $orange;
                         }
