@@ -6,8 +6,35 @@ export default {
     data(){
         return{
             store,
+
+            // proprietà per valore base statistica
+            counter: 0,
         }
     },
+    
+
+    methods: {
+
+        increment(stat) {
+            // const target = store.stats[this.index].data;
+            const interval = 5;
+            const step = 1;
+
+            const timer = setInterval(() => {
+                if (stat.counter < stat.data) {
+                    stat.counter += step;
+                } else {
+                    clearInterval(timer);
+                }
+            }, interval);
+        
+        }
+    },
+    mounted() {
+        store.stats.forEach(stat => this.increment(stat));
+        
+    },
+   
 }
 
 </script>
@@ -19,7 +46,7 @@ export default {
         <div class="row align-items-center">
             <div class="col-3" v-for="(stat, index) in store.stats" :key="index">
                 <div class="numbers">
-                    <span>{{ stat.data }}</span>
+                    <span>{{ stat.counter }}</span>
                     <span>{{ stat.attribute }}</span>
                 </div>
 

@@ -123,21 +123,25 @@ export const store = reactive({
             data: 1926,
             attribute: '',
             title: 'FINISHED SESSIONS',
+            counter: 0,
         },
         {
             data: 3092,
             attribute: '+',
             title: 'ONLINE ENROLLMENT',
+            counter: 0,
         },
         {
             data: 200,
             attribute: '',
             title: 'SUBJECTS TAUGHT',
+            counter: 0,
         },
         {
             data: 100,
             attribute: '%',
             title: 'SATISFACTION RATE',
+            counter: 0,
         },
     ],
 
