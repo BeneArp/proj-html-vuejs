@@ -5,7 +5,9 @@ import ArtistCoachingAppHome from '../components/ArtistCoachingAppHome.vue';
 import MartinGarrixAppHome from '../components/MartinGarrixAppHome.vue';
 import AppVideo from '../components/AppVideo.vue';
 import SliderAppHome from '../components/SliderAppHome.vue';
-// import OnlineCourses from '../components/OnlineCourses.vue';
+import AppVideo from '../components/AppVideo.vue';
+import OnlineCourses from '../components/OnlineCourses.vue';
+import TipsAppHome from '../components/TipsAppHome.vue'
 
 export default {
     name: 'AppHome',
@@ -15,6 +17,8 @@ export default {
         MartinGarrixAppHome,
         AppVideo,
         SliderAppHome,
+        OnlineCourses,
+        TipsAppHome,
     },
 
     data(){
@@ -22,10 +26,9 @@ export default {
                 videoHomePage:{
                     image: "../assets/images/artist-video-poster.jpg",
                     url: "https://www.youtube.com/watch?v=ElFJ1qcl74U",
-                    messaggio: "maremma santa"
                 }
             }
-        // OnlineCourses
+        
     }
 }
 
@@ -46,8 +49,8 @@ export default {
 </section>
 <SliderAppHome />
 
-
 <OnlineCourses/>
+<TipsAppHome/>
 </template>
 
 
