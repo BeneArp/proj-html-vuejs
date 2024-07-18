@@ -6,176 +6,205 @@
 </script>
 
 <template>
-    <section class="container">
-        <div class="col-4 title">
-                <h3>Artist coaching</h3>
-                <h2>Latest Online Courses</h2>
+    <section class="container-fluid">
+        <!-- immagini di background -->       
+        <section class="container">
+            <img id="shape-left" src="../assets/images/artist-shape-01-600x577.png" alt="">
+            <div class="col-4 title">
+                    <h3>Artist coaching</h3>
+                    <h2>Latest Online Courses</h2>
             </div>
-        <div class="row">
+            <div class="row">
 
-            <div class="col-3">
-                <div class="img-art">
-                    <img src="../assets/images/artist-course-08-480x480.jpg" class="artwork" alt="">
-                </div>
-                <div class="info-art">
-                    <h4 class="price">$18.00</h4>
-                    <h4 class="artwork-title">The Acrilic Paintin Academy</h4>
-                    <div class="icon-lessons">
-                        <div>
-                            <i class="fa-regular fa-file-lines"></i>
-                            <span>4 Lessons</span>
+                <div class="col-3">
+                    <div class="img-art">
+                        <img src="../assets/images/artist-course-08-480x480.jpg" class="artwork" alt="">
+                    </div>
+                    <div class="info-art">
+                        <h4 class="price">$18.00</h4>
+                        <h4 class="artwork-title">The Acrilic Paintin Academy</h4>
+                        <div class="icon-lessons">
+                            <div>
+                                <i class="fa-regular fa-file-lines"></i>
+                                <span>4 Lessons</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-user"></i>
+                                <span>50 Students</span>
+                            </div>
                         </div>
-                        <div>
-                            <i class="fa-regular fa-user"></i>
-                            <span>50 Students</span>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="img-art">
+                        <img src="../assets/images/artist-course-07-480x480.jpg" class="artwork" alt="">
+                    </div>
+                    <div class="info-art">
+                        <h4 class="price">$18.00</h4>
+                        <h4 class="artwork-title">The Acrilic Paintin Academy</h4>
+                        <div class="icon-lessons">
+                            <div>
+                                <i class="fa-regular fa-file-lines"></i>
+                                <span>4 Lessons</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-user"></i>
+                                <span>50 Students</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="img-art">
+                        <img src="../assets/images/artist-course-06-480x480.jpg" class="artwork" alt="">
+                    </div>
+                    <div class="info-art">
+                        <h4 class="price">$18.00</h4>
+                        <h4 class="artwork-title">The Acrilic Paintin Academy</h4>
+                        <div class="icon-lessons">
+                            <div>
+                                <i class="fa-regular fa-file-lines"></i>
+                                <span>4 Lessons</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-user"></i>
+                                <span>50 Students</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="img-art">
+                        <img src="../assets/images/artist-course-05-480x480.jpg" class="artwork" alt="">
+                    </div>
+                    <div class="info-art">
+                        <h4 class="price">$18.00</h4>
+                        <h4 class="artwork-title">The Acrilic Paintin Academy</h4>
+                        <div class="icon-lessons">
+                            <div>
+                                <i class="fa-regular fa-file-lines"></i>
+                                <span>4 Lessons</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-user"></i>
+                                <span>50 Students</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="img-art">
+                        <img src="../assets/images/artist-course-04-480x480.jpg" class="artwork" alt="">
+                    </div>
+                    <div class="info-art">
+                        <h4 class="price">$18.00</h4>
+                        <h4 class="artwork-title">The Acrilic Paintin Academy</h4>
+                        <div class="icon-lessons">
+                            <div>
+                                <i class="fa-regular fa-file-lines"></i>
+                                <span>4 Lessons</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-user"></i>
+                                <span>50 Students</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="img-art">
+                        <img src="../assets/images/artist-course-03-480x480.jpg" class="artwork" alt="">
+                    </div>
+                    <div class="info-art">
+                        <h4 class="price">$18.00</h4>
+                        <h4 class="artwork-title">The Acrilic Paintin Academy</h4>
+                        <div class="icon-lessons">
+                            <div>
+                                <i class="fa-regular fa-file-lines"></i>
+                                <span>4 Lessons</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-user"></i>
+                                <span>50 Students</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="img-art">
+                        <img src="../assets/images/artist-course-02-480x480.jpg" class="artwork" alt="">
+                    </div>
+                    <div class="info-art">
+                        <h4 class="price">$18.00</h4>
+                        <h4 class="artwork-title">The Acrilic Paintin Academy</h4>
+                        <div class="icon-lessons">
+                            <div>
+                                <i class="fa-regular fa-file-lines"></i>
+                                <span>4 Lessons</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-user"></i>
+                                <span>50 Students</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="img-art">
+                        <img src="../assets/images/artist-course-01-480x480.jpg" class="artwork" alt="">
+                    </div>
+                    <div class="info-art">
+                        <h4 class="price">$18.00</h4>
+                        <h4 class="artwork-title">The Acrilic Paintin Academy</h4>
+                        <div class="icon-lessons">
+                            <div>
+                                <i class="fa-regular fa-file-lines"></i>
+                                <span>4 Lessons</span>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-user"></i>
+                                <span>50 Students</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="img-art">
-                    <img src="../assets/images/artist-course-07-480x480.jpg" class="artwork" alt="">
-                </div>
-                <div class="info-art">
-                    <h4 class="price">$18.00</h4>
-                    <h4 class="artwork-title">The Acrilic Paintin Academy</h4>
-                    <div class="icon-lessons">
-                        <div>
-                            <i class="fa-regular fa-file-lines"></i>
-                            <span>4 Lessons</span>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-user"></i>
-                            <span>50 Students</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img-art">
-                    <img src="../assets/images/artist-course-06-480x480.jpg" class="artwork" alt="">
-                </div>
-                <div class="info-art">
-                    <h4 class="price">$18.00</h4>
-                    <h4 class="artwork-title">The Acrilic Paintin Academy</h4>
-                    <div class="icon-lessons">
-                        <div>
-                            <i class="fa-regular fa-file-lines"></i>
-                            <span>4 Lessons</span>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-user"></i>
-                            <span>50 Students</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img-art">
-                    <img src="../assets/images/artist-course-05-480x480.jpg" class="artwork" alt="">
-                </div>
-                <div class="info-art">
-                    <h4 class="price">$18.00</h4>
-                    <h4 class="artwork-title">The Acrilic Paintin Academy</h4>
-                    <div class="icon-lessons">
-                        <div>
-                            <i class="fa-regular fa-file-lines"></i>
-                            <span>4 Lessons</span>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-user"></i>
-                            <span>50 Students</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img-art">
-                    <img src="../assets/images/artist-course-04-480x480.jpg" class="artwork" alt="">
-                </div>
-                <div class="info-art">
-                    <h4 class="price">$18.00</h4>
-                    <h4 class="artwork-title">The Acrilic Paintin Academy</h4>
-                    <div class="icon-lessons">
-                        <div>
-                            <i class="fa-regular fa-file-lines"></i>
-                            <span>4 Lessons</span>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-user"></i>
-                            <span>50 Students</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img-art">
-                    <img src="../assets/images/artist-course-03-480x480.jpg" class="artwork" alt="">
-                </div>
-                <div class="info-art">
-                    <h4 class="price">$18.00</h4>
-                    <h4 class="artwork-title">The Acrilic Paintin Academy</h4>
-                    <div class="icon-lessons">
-                        <div>
-                            <i class="fa-regular fa-file-lines"></i>
-                            <span>4 Lessons</span>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-user"></i>
-                            <span>50 Students</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img-art">
-                    <img src="../assets/images/artist-course-02-480x480.jpg" class="artwork" alt="">
-                </div>
-                <div class="info-art">
-                    <h4 class="price">$18.00</h4>
-                    <h4 class="artwork-title">The Acrilic Paintin Academy</h4>
-                    <div class="icon-lessons">
-                        <div>
-                            <i class="fa-regular fa-file-lines"></i>
-                            <span>4 Lessons</span>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-user"></i>
-                            <span>50 Students</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img-art">
-                    <img src="../assets/images/artist-course-01-480x480.jpg" class="artwork" alt="">
-                </div>
-                <div class="info-art">
-                    <h4 class="price">$18.00</h4>
-                    <h4 class="artwork-title">The Acrilic Paintin Academy</h4>
-                    <div class="icon-lessons">
-                        <div>
-                            <i class="fa-regular fa-file-lines"></i>
-                            <span>4 Lessons</span>
-                        </div>
-                        <div>
-                            <i class="fa-regular fa-user"></i>
-                            <span>50 Students</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </section>
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 @use "@fortawesome/fontawesome-free/css/all.min.css" as *;
+    .container-fluid {
+        position: relative;
+        overflow: hidden;
+        #shape-left {
+            height: 600px;
+            transform: rotate();
+            position: absolute;
+            left: 0;
+            bottom: 200px;
+        }
+    }
     .container {
         // background-color: pink;
         // min-height: 200px;
         padding: 5rem 0;
+        .title{
+            margin: 3rem auto;
+            h3{
+                font-family: Rossela Signature Font Demo, sans-serif;
+                color: $light-blue;
+                letter-spacing: 0.1em;
+                font-size: 40px;
+                text-align: center;
+            }
+            h2 {
+                text-align: center;
+                font-weight: bold;
+            }
+        }
         .col-3 {
             // border: solid black 0.01px;
             min-height: 100px;
@@ -211,28 +240,12 @@
                 width: 100%;
                 .artwork {
                 transition: all 2s;
-                &:hover{
-                    scale: 1.1;
+                    &:hover{
+                        scale: 1.1;
+                    }
                 }
             }
-            }
 
         }
-        .title{
-            margin: 3rem auto;
-            h3{
-            font-family: Rossela Signature Font Demo, sans-serif;
-            color: $light-blue;
-            letter-spacing: 0.1em;
-            font-size: 40px;
-            text-align: center;
-            }
-            h2 {
-                text-align: center;
-                font-weight: bold;
-            }
-
-        }
-
     }
 </style>
