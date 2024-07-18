@@ -27,6 +27,7 @@
     @use '../../styles/partials/mixins' as *;
     @use '../../styles/partials/variables' as *;
 
+
     ul{
         list-style: none;
         @include flex;
