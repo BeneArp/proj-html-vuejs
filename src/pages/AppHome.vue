@@ -5,7 +5,6 @@ import ArtistCoachingAppHome from '../components/ArtistCoachingAppHome.vue';
 import MartinGarrixAppHome from '../components/MartinGarrixAppHome.vue';
 import AppVideo from '../components/AppVideo.vue';
 import SliderAppHome from '../components/SliderAppHome.vue';
-import AppVideo from '../components/AppVideo.vue';
 import OnlineCourses from '../components/OnlineCourses.vue';
 import TipsAppHome from '../components/TipsAppHome.vue'
 

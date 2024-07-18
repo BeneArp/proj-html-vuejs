@@ -33,7 +33,7 @@ export const store = reactive({
 
 
     // struttura dati SliderAppHome
-    testimmonials: [
+    testimonials: [
         {
             title: 'High level of efficiency and scientific teaching methods',
             text: '"I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me."',
