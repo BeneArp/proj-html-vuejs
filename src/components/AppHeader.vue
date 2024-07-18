@@ -1,6 +1,7 @@
 <script>
 import {store} from '../store'
 import Countdown from "./Countdown.vue";
+// import { router } from '../router';
 
     export default {
         name: 'AppHeader',
@@ -10,6 +11,7 @@ import Countdown from "./Countdown.vue";
             data(){
             return{
                 store,
+                // router,
             }
         }
     }
@@ -49,15 +51,21 @@ import Countdown from "./Countdown.vue";
         </section>
         <div>
             <ul>
-                <router-link :to="{ name: 'home' }">
-                    Home
-                </router-link>
-                <router-link :to="{ name: 'about us' }">
-                    About Us
-                </router-link>
-                <router-link :to="{ name: 'contact me' }">
-                    Contact Me
-                </router-link>
+                <li>
+                    <router-link :to="{ name: 'home'}">
+                        Home
+                    </router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'about us' }">
+                        About Us
+                    </router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'contact me' }">
+                        Contact Me
+                    </router-link>
+                </li>
             </ul>
         </div>
 

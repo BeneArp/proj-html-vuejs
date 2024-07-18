@@ -47,6 +47,17 @@
                 </div>
             </div>
         </div>
+
+        <div id="more-post">
+            <span>
+                Get into details now?​ <strong><a href="#">View all posts
+                    <!-- animazione in hover -->
+                    <div class="dynamic-border-bottom"></div>
+
+                <!-- icona -->
+                <i class="fa-solid fa-arrow-right"></i></a></strong>
+            </span>
+        </div>
     </section>
 
 </template>
@@ -141,6 +152,30 @@
 
             .row{
                 height: 100%;
+            }
+        }
+
+        #more-post{
+            width: fit-content;
+            margin: 0 auto;
+
+            a{
+                text-decoration: none;
+                color: $orange;
+                position: relative;
+
+                .dynamic-border-bottom{
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    background-color: $orange;
+                    left: 0;
+                    transition: all 1s;
+                }
+
+                &:hover .dynamic-border-bottom{
+                    width: 120px;
+                }
             }
         }
     }
