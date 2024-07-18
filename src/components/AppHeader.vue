@@ -1,6 +1,7 @@
 <script>
 import {store} from '../store'
 import Countdown from "./Countdown.vue";
+// import { router } from '../router';
 // // Import our custom CSS
 // import '../scss/styles.scss';
 
@@ -15,6 +16,7 @@ import * as bootstrap from 'bootstrap'
             data(){
             return{
                 store,
+                // router,
             }
         }
     }
@@ -31,29 +33,20 @@ import * as bootstrap from 'bootstrap'
                     <img src="../assets/images/dark-logo.png" alt="logo" >
                 </div>
                 <div class="col-5">
-                    <!-- <ul>
+                    <ul>
                         <li v-for="item in store.menuHeader">
-                            <a href="#">{{item.text}}</a>
+                            <a class="title-link" href="#">{{item.text}}</a>
                             <div class="dropdown">
                                 <i class="fa-solid fa-chevron-down chevron button btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                 <ul class="dropdown-menu" style="">
-                                    <li><a class="dropdown-item" v-for="listPage in store.pagesItem" href="#">{{listPage.text}}</a></li>
+                                    <li>
+                                        <a class="dropdown-item" v-for="link in item.url" :key="link.link" :href="link.url">{{link.link}}</a>
+                                    </li>
                                 </ul>
                             </div>
 
                         </li>
-
-                    </ul> -->
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                        </button>
-                            <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
+                    </ul>
                 </div>
                 <div class="col-2 social">
                     <a v-for="icona in store.footerIcons" :href="icona.url">
@@ -64,15 +57,21 @@ import * as bootstrap from 'bootstrap'
         </section>
         <div>
             <ul>
-                <router-link :to="{ name: 'home' }">
-                    Home
-                </router-link>
-                <router-link :to="{ name: 'about us' }">
-                    About Us
-                </router-link>
-                <router-link :to="{ name: 'contact me' }">
-                    Contact Me
-                </router-link>
+                <li>
+                    <router-link :to="{ name: 'home'}">
+                        Home
+                    </router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'about us' }">
+                        About Us
+                    </router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'contact me' }">
+                        Contact Me
+                    </router-link>
+                </li>
             </ul>
         </div>
 
@@ -123,12 +122,13 @@ import * as bootstrap from 'bootstrap'
                     }
                     .chevron {
                         background-color: transparent;
+                        color: gray;
                         border-style: none;
                     }
                     &:hover {
                         border-bottom: solid $orange 0.1rem;
                         color: $orange;
-                        a, i {
+                        .title-link, i {
                             color: $orange;
                         }
                     }
@@ -146,6 +146,10 @@ import * as bootstrap from 'bootstrap'
                         color:$orange ;
                     }
                 }
+            }
+
+            .dropdown-menu a {
+                color: black;
             }
 
         }
