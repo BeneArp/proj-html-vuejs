@@ -53,8 +53,31 @@ export default {
             <!-- slider cards -->
             <div class="col-12 d-flex justify-content-center">
 
-                <div class="ms-card" v-for="(card, i) in store.testimonials" :key="i" :class="activeSlide === i ? 'active' : 'no-display'">
+                <!-- slider dinamico -->
+                <!-- <div class="ms-card" v-for="(card, i) in store.testimonials" :key="i" :class="activeSlide === i ? 'active' : 'no-display'">
                     <p>{{ card.name }}</p>
+
+                </div> -->
+
+                <!-- slider statico -->
+                <div class="ms-card">
+
+                    <div class="text">
+                        <h4>{{ store.testimonials[activeSlide].title }}</h4>
+                        <p>{{ store.testimonials[activeSlide].text }}</p>
+                    </div>
+
+                    <div class="info d-flex align-items-center">
+                        <div class="info-img">
+                            <img :src="store.testimonials[activeSlide].image" :alt="store.testimonials[activeSlide].name">
+                        </div>
+
+                        <div class="info-text">
+                            <h5>{{store.testimonials[activeSlide].name}}</h5>
+                            <p>{{store.testimonials[activeSlide].job}}</p>
+
+                        </div>
+                    </div>
 
                 </div>
 
@@ -62,7 +85,7 @@ export default {
 
             <!-- controlli -->
             <div class="controls d-flex justify-content-center">
-                <span class="dot" v-for="(dot, index) in store.testimonials" :key="index" @click="showImage(index)">
+                <span class="dot" v-for="(dot, index) in store.testimonials" :key="index" @click="showImage(index)"  :class="activeSlide === index ? 'dot-active' : ''">
                     <i class="fa-solid fa-circle"></i>
                 </span>
 
@@ -83,9 +106,9 @@ export default {
 @use "@fortawesome/fontawesome-free/css/all.min.css" as *;
 
 section {
-    height: 500px;
+    
     background-color: $light-grey;
-    margin-bottom: 100px;
+    
 
     #main-title {
         font-size: 34px;
@@ -101,24 +124,61 @@ section {
     }
 
     .col-11 {
-        background-color: green;
+        // background-color: green;
         // height: 400px;
         
 
         .col-12 {
             
-            background-color: bisque;
+            // background-color: bisque;
             gap: 20px;
             overflow: hidden;
 
             .ms-card {
                 flex-basis: calc(100% / 3 - 20px);
+                height: 400px;
                 flex-shrink: 0;
-                height: 300px;
+                padding: 30px;
                 transition: transform 0.5s ease;
+                background-color: white;
+                border-radius: 5px;
 
                 // background-color: blue;
-                border: 1px solid red;
+                // border: 1px solid red;
+
+                .text {
+                    margin-bottom: 50px;
+
+                    h4 {
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        font-weight: bold;
+                        color: #696969;
+                    }
+                }
+
+                .info-img {
+                    width: 20%;
+                    margin-right: 20px;
+
+                    img {
+                        max-width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+
+                .info-text {
+                    h5 {
+                        font-weight: bold;
+                    }
+
+                    p {
+                        color: #696969;
+                    }
+                }
             }
 
             .active {
@@ -134,14 +194,25 @@ section {
         }
 
         .controls {
-            
-            background-color: black;
+            padding: 50px 0;
+            // background-color: black;
 
             .dot {
                 display: inline-block;
+                font-size: 10px;
                 padding: 0 10px;
                 color: #d8d8d8;
                 cursor: pointer;
+
+                &:hover {
+                    color: $black;
+                    scale: 1.5;
+                }
+            }
+
+            .dot-active {
+                color: $black;
+                scale: 1.5;  
             }
         }
     }
