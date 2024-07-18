@@ -73,7 +73,8 @@
     @use "@fortawesome/fontawesome-free/css/all.min.css";
 
     footer{
-        background-color: $white;
+        background-color: $light-grey;
+        padding-top: 2em;
         max-width: 100vw;
         overflow: hidden;
         // debug

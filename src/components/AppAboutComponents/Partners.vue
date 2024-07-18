@@ -21,7 +21,7 @@
 
 <template>
 
-    <div class="container-lg">
+    <div class="container-lg pb-5">
         <div class="row flex-nowrap align-self-center">
             <div class="col-2" v-for="logo in store.partners">
                 <a :href="logo.url">
