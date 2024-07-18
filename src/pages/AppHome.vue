@@ -55,7 +55,6 @@ export default {
         <NewsletterAppHome />
     </section>
 
-
 </template>
 
 

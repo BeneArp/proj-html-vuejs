@@ -13,11 +13,11 @@ import * as bootstrap from 'bootstrap'
         components: {
             Countdown,
         },
-            data(){
-            return{
-                store,
-                // router,
-            }
+        data(){
+        return{
+            store,
+            // router,
+        }
         }
     }
 
@@ -33,18 +33,19 @@ import * as bootstrap from 'bootstrap'
                     <img src="../assets/images/dark-logo.png" alt="logo" >
                 </div>
                 <div class="col-5">
-                    <ul>
+                    <ul class="title-menu">
                         <li v-for="item in store.menuHeader">
-                            <a class="title-link" href="#">{{item.text}}</a>
+                            <a class="title-link" href="#">{{item.text}}
+                                <div class="dynamic-border-bottom"></div>
+                            </a>
                             <div class="dropdown">
                                 <i class="fa-solid fa-chevron-down chevron button btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                 <ul class="dropdown-menu" style="">
-                                    <li>
-                                        <a class="dropdown-item" v-for="link in item.url" :key="link.link" :href="link.url">{{link.link}}</a>
+                                    <li v-for="link in item.url" :key="link.link" href="link.url">
+                                        <a class="dropdown-item">{{link.link}}</a>
                                     </li>
                                 </ul>
                             </div>
-
                         </li>
                     </ul>
                 </div>
@@ -100,22 +101,38 @@ import * as bootstrap from 'bootstrap'
             .logo {
                 width: 12rem;
             }
-            ul, li {
+            .title-menu, .title-menu li {
                 display: flex;
                 padding-bottom: 0.3rem;
             }
-            ul {
+            .title-menu {
                 width: 100%;
                 justify-content: space-between;
                 margin: 0;
-
                 li {
                     gap: 0.5rem;
                     align-items: center;
-                    a {
+                    transition: all 1s;
+                    &:hover .title-link, &:hover .chevron{
+                        color: $orange;
+                        background-color: transparent;
+                    }
+                    .title-link {
                         text-decoration: none;
                         font-size: 1rem;
                         color: $black;
+                        position: relative;
+                        .dynamic-border-bottom{
+                            position: absolute;
+                            width: 0;
+                            height: 2px;
+                            background-color: $orange;
+                            left: 0;
+                            transition: all 1s;
+                        }
+                        &:hover .dynamic-border-bottom{
+                            width: 130%;
+                        }
                     }
                     i {
                         font-size: 0.6rem;
@@ -125,14 +142,15 @@ import * as bootstrap from 'bootstrap'
                         background-color: transparent;
                         color: gray;
                         border-style: none;
+                        padding: 0;
                     }
-                    &:hover {
-                        border-bottom: solid $orange 0.1rem;
-                        color: $orange;
-                        .title-link, i {
-                            color: $orange;
-                        }
-                    }
+                    // &:hover {
+                    //     border-bottom: solid $orange 0.1rem;
+                    //     color: $orange;
+                    //     .title-link, i {
+                    //         color: $orange;
+                    //     }
+                    // }
                 }
 
             }
@@ -148,11 +166,6 @@ import * as bootstrap from 'bootstrap'
                     }
                 }
             }
-
-            .dropdown-menu a {
-                color: black;
-            }
-
         }
     }
 
