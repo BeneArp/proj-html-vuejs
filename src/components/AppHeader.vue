@@ -35,7 +35,9 @@ import * as bootstrap from 'bootstrap'
                 <div class="col-5">
                     <ul class="title-menu">
                         <li v-for="item in store.menuHeader">
-                            <a class="title-link" href="#">{{item.text}}</a>
+                            <a class="title-link" href="#">{{item.text}}
+                                <div class="dynamic-border-bottom"></div>
+                            </a>
                             <div class="dropdown">
                                 <i class="fa-solid fa-chevron-down chevron button btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                 <ul class="dropdown-menu" style="">
@@ -90,9 +92,6 @@ import * as bootstrap from 'bootstrap'
         .container {
             width: 100vw;
         }
-        .kk {
-            display: flex;
-        }
         nav {
             padding: 0 4.5rem;
             height: 80px;
@@ -110,15 +109,30 @@ import * as bootstrap from 'bootstrap'
                 width: 100%;
                 justify-content: space-between;
                 margin: 0;
-
                 li {
                     gap: 0.5rem;
                     align-items: center;
                     transition: all 1s;
+                    &:hover .title-link, &:hover .chevron{
+                        color: $orange;
+                        background-color: transparent;
+                    }
                     .title-link {
                         text-decoration: none;
                         font-size: 1rem;
                         color: $black;
+                        position: relative;
+                        .dynamic-border-bottom{
+                            position: absolute;
+                            width: 0;
+                            height: 2px;
+                            background-color: $orange;
+                            left: 0;
+                            transition: all 1s;
+                        }
+                        &:hover .dynamic-border-bottom{
+                            width: 130%;
+                        }
                     }
                     i {
                         font-size: 0.6rem;
@@ -128,18 +142,15 @@ import * as bootstrap from 'bootstrap'
                         background-color: transparent;
                         color: gray;
                         border-style: none;
-                        &:hover{
-                            background-color: transparent;
-                            color: $orange;
-                        }
+                        padding: 0;
                     }
-                    &:hover {
-                        border-bottom: solid $orange 0.1rem;
-                        color: $orange;
-                        .title-link, i {
-                            color: $orange;
-                        }
-                    }
+                    // &:hover {
+                    //     border-bottom: solid $orange 0.1rem;
+                    //     color: $orange;
+                    //     .title-link, i {
+                    //         color: $orange;
+                    //     }
+                    // }
                 }
 
             }
