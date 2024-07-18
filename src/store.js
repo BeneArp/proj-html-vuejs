@@ -91,28 +91,69 @@ export const store = reactive({
             title: 'Life Mentoring',
             text: 'Get some healing and guidance for you future career and vocational directions.',
             url: '#',
-            direction: 'Start here'
+            direction: 'Start here',
+            id: 0
         },
         {
             icon: 'fa-solid fa-gear',
             title: 'Self Development',
             text: 'Develop skills for career of various majors including computer science & language competence.',
             url: '#',
-            direction: 'Discover now'
+            direction: 'Discover now',
+            id: 1
         },
         {
             icon: 'fa-regular fa-life-ring',
             title: 'Ask Consultancy',
             text: "Make a reservation with our special consultant to learn what's best for your dream career.",
             url: '#',
-            direction: 'Get Free Quote'
+            direction: 'Get Free Quote',
+            id: 2
         },
         {
             icon: 'fa-solid fa-desktop',
             title: 'Remote Learning',
             text: 'Learn from anywhere in the world on desktop, tablet or mobile phone with an Internet connection.',
             url: '#',
-            direction: 'Start now'
+            direction: 'Start now',
+            id: 3
+        },
+    ],
+
+    AboutSlider:[
+        {
+            image: "../../assets/images/testimonial-avata-02.jpg",
+            name: "MINA HOLLACE",
+            role: "/ Freelancer",
+            text: "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me."
+        },
+
+        {
+            image: "../../assets/images/testimonial-avata-04.jpg",
+            name: "Madley Pondor",
+            role: "/ IT Specialist",
+            text: "I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students."
+        },
+
+        {
+            image: "../../assets/images/testimonial-avata-01.jpg",
+            name: "Luvic Dubble",
+            role: "/ Private Tutor",
+            text: "I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation into effective methods to adopt."
+        },
+
+        {
+            image: "../../assets/images/testimonial-avata-03.jpg",
+            name: "Florence Themes",
+            role: "/ Multimedia Admin",
+            text: "I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me."
+        },
+
+        {
+            image: "../../assets/images/testimonial-avata-02.jpg",
+            name: "MINA HOLLACE",
+            role: "/ Freelancer",
+            text: "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me."
         },
     ],
 

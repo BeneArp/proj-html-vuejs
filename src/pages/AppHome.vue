@@ -52,13 +52,6 @@ export default {
         <TipsAppHome/>
     </section>
 
-<section class="video-link">
-    <img id="circle-decoration-left" src="../assets/images/maxcoach-shape-05.png" alt="">
-    <img id="circle-decoration-right" src="../assets/images/maxcoach-shape-12.png" alt="">
-    <AppVideo :video="videoHomePage"/>
-</section>
-<SliderAppHome />
-
 </template>
 
 
