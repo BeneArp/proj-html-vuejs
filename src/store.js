@@ -145,13 +145,13 @@ export const store = reactive({
             text: 'Home',
             url: [
                 {
-                    link: 'Ciao',
+                    link: 'link pagina',
                 },
                 {
-                    link: 'ci sono',
+                    link: 'link pagina',
                 },
                 {
-                    link: 'andrà bene',
+                    link: 'link pagina',
                 },
             ]
         },
@@ -159,14 +159,23 @@ export const store = reactive({
             text: 'Pages',
             url: [
                 {
-                    link: 'Ciao',
+                    link: 'Start Here',
                 },
                 {
-                    link: 'ci sono',
+                    link: 'Success stori',
                 },
                 {
-                    link: 'andrà bene',
+                    link: 'About me',
                 },
+                {
+                    link: 'About us 01',
+                },
+                {
+                    link: 'Contact me',
+                },
+                {
+                    link: 'Contact us',
+                }
 
             ]
         },
@@ -174,13 +183,13 @@ export const store = reactive({
             text: 'Courses',
             url: [
                 {
-                    link: 'Ciao',
+                    link: 'link pagina',
                 },
                 {
-                    link: 'ci sono',
+                    link: 'link pagina',
                 },
                 {
-                    link: 'andrà bene',
+                    link: 'link pagina',
                 },
             ]
         },
@@ -188,13 +197,13 @@ export const store = reactive({
             text: 'Features',
             url: [
                 {
-                    link: 'Ciao',
+                    link: 'link pagina',
                 },
                 {
-                    link: 'ci sono',
+                    link: 'link pagina',
                 },
                 {
-                    link: 'andrà bene',
+                    link: 'link pagina',
                 },
             ]
         },
@@ -202,13 +211,13 @@ export const store = reactive({
             text: 'Blog',
             url: [
                 {
-                    link: 'Ciao',
+                    link: 'link pagina',
                 },
                 {
-                    link: 'ci sono',
+                    link: 'link pagina',
                 },
                 {
-                    link: 'andrà bene',
+                    link: 'link pagina',
                 },
             ]
         },
@@ -216,64 +225,18 @@ export const store = reactive({
             text: 'Shop',
             url: [
                 {
-                    link: 'Ciao',
+                    link: 'link pagina',
                 },
                 {
-                    link: 'ci sono',
+                    link: 'link pagina',
                 },
                 {
-                    link: 'andrà bene',
+                    link: 'link pagina',
                 },
             ]
         },
 
     ],
-
-    menuItems: [
-        {
-            home: [
-                ''
-            ]
-        },
-        {
-            pagesItem: [
-                {
-                    text: 'Start Here',
-                    url: '#'
-                },
-                {
-                    text: 'Success stori',
-                    url: '#'
-                },
-                {
-                    text: 'About me',
-                    url: '#'
-                },
-                {
-                    text: 'About us 01',
-                    url: '#'
-                },
-                {
-                    text: 'About us 01',
-                    url: '#'
-                },
-                {
-                    text: 'About us 01',
-                    url: '#'
-                },
-                {
-                    text: 'Contact me',
-                    url: '#'
-                },
-                {
-                    text: 'Contact us',
-                    url: '#'
-                },
-            ]
-        }
-
-
-    ]
 
 
 });

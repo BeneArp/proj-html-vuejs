@@ -39,12 +39,11 @@ import * as bootstrap from 'bootstrap'
                             <div class="dropdown">
                                 <i class="fa-solid fa-chevron-down chevron button btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                 <ul class="dropdown-menu" style="">
-                                    <li>
-                                        <a class="dropdown-item" v-for="link in item.url" :key="link.link" :href="link.url">{{link.link}}</a>
+                                    <li v-for="link in item.url" :key="link.link" href="link.url">
+                                        <a class="dropdown-item">{{link.link}}</a>
                                     </li>
                                 </ul>
                             </div>
-
                         </li>
                     </ul>
                 </div>
@@ -90,6 +89,9 @@ import * as bootstrap from 'bootstrap'
         .container {
             width: 100vw;
         }
+        .kk {
+            display: flex;
+        }
         nav {
             padding: 0 4.5rem;
             height: 80px;
@@ -124,6 +126,10 @@ import * as bootstrap from 'bootstrap'
                         background-color: transparent;
                         color: gray;
                         border-style: none;
+                        &:hover, &:active{
+                            background-color: transparent;
+                            color: $orange;
+                        }
                     }
                     &:hover {
                         border-bottom: solid $orange 0.1rem;
@@ -147,11 +153,6 @@ import * as bootstrap from 'bootstrap'
                     }
                 }
             }
-
-            .dropdown-menu a {
-                color: black;
-            }
-
         }
     }
 
