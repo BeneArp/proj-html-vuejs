@@ -32,7 +32,7 @@ export const store = reactive({
     ],
 
     // TipsSideCard dati
-    SideCards:[
+    SideCards: [
         {
             url: '#',
             image: '../assets/images/artist-blog-03-480x356.jpeg',
@@ -143,27 +143,88 @@ export const store = reactive({
     menuHeader: [
         {
             text: 'Home',
-            url: '#'
+            url: [
+                {
+                    link: 'Ciao',
+                },
+                {
+                    link: 'ci sono',
+                },
+                {
+                    link: 'andrà bene',
+                },
+            ]
         },
         {
             text: 'Pages',
-            url: '#'
+            url: [
+                {
+                    link: 'Ciao',
+                },
+                {
+                    link: 'ci sono',
+                },
+                {
+                    link: 'andrà bene',
+                },
+
+            ]
         },
         {
             text: 'Courses',
-            url: '#'
+            url: [
+                {
+                    link: 'Ciao',
+                },
+                {
+                    link: 'ci sono',
+                },
+                {
+                    link: 'andrà bene',
+                },
+            ]
         },
         {
             text: 'Features',
-            url: '#'
+            url: [
+                {
+                    link: 'Ciao',
+                },
+                {
+                    link: 'ci sono',
+                },
+                {
+                    link: 'andrà bene',
+                },
+            ]
         },
         {
             text: 'Blog',
-            url: '#'
+            url: [
+                {
+                    link: 'Ciao',
+                },
+                {
+                    link: 'ci sono',
+                },
+                {
+                    link: 'andrà bene',
+                },
+            ]
         },
         {
             text: 'Shop',
-            url: '#'
+            url: [
+                {
+                    link: 'Ciao',
+                },
+                {
+                    link: 'ci sono',
+                },
+                {
+                    link: 'andrà bene',
+                },
+            ]
         },
 
     ],

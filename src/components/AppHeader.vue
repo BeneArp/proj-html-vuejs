@@ -35,27 +35,18 @@ import * as bootstrap from 'bootstrap'
                 <div class="col-5">
                     <ul>
                         <li v-for="item in store.menuHeader">
-                            <a href="#">{{item.text}}</a>
+                            <a class="title-link" href="#">{{item.text}}</a>
                             <div class="dropdown">
                                 <i class="fa-solid fa-chevron-down chevron button btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                 <ul class="dropdown-menu" style="">
-                                    <li><a class="dropdown-item" v-for="listPage in store.pagesItem" href="#">{{listPage.text}}</a></li>
+                                    <li>
+                                        <a class="dropdown-item" v-for="link in item.url" :key="link.link" :href="link.url">{{link.link}}</a>
+                                    </li>
                                 </ul>
                             </div>
 
                         </li>
-
                     </ul>
-                    <!-- <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
-                        </button>
-                            <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div> -->
                 </div>
                 <div class="col-2 social">
                     <a v-for="icona in store.footerIcons" :href="icona.url">
@@ -137,7 +128,7 @@ import * as bootstrap from 'bootstrap'
                     &:hover {
                         border-bottom: solid $orange 0.1rem;
                         color: $orange;
-                        a, i {
+                        .title-link, i {
                             color: $orange;
                         }
                     }
@@ -155,6 +146,10 @@ import * as bootstrap from 'bootstrap'
                         color:$orange ;
                     }
                 }
+            }
+
+            .dropdown-menu a {
+                color: black;
             }
 
         }
