@@ -24,7 +24,9 @@
     <div class="container-lg">
         <div class="row flex-nowrap align-self-center">
             <div class="col-2" v-for="logo in store.partners">
-                <img :src="getImagePath(`../assets/${logo.image}`)" alt="">
+                <a :href="logo.url">
+                    <img :src="getImagePath(`../assets/${logo.image}`)" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -34,7 +36,7 @@
 <style lang="scss" scoped>
     .row{
         overflow: hidden;
-        height: 200px;
+        height: 100px;
 
         div{
             position: relative;
@@ -44,6 +46,12 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                filter: brightness(1.4);
+                transition: all 1s;
+
+                &:hover{
+                    filter: brightness(1);
+                }
             }
         }
     }
