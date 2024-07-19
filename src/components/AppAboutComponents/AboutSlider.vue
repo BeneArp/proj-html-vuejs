@@ -8,6 +8,7 @@
             return{
                 store,
                 activeSlide: 0,
+                slide: '',
             }
         },
 
@@ -17,7 +18,18 @@
             },
 
             changeActiveSlide(numeroIndice){
+
+                // if(numeroIndice > this.activeSlide){
+                //     this.slide = 'forward'
+                // }else if (numeroIndice < this.activeSlide){
+                //     this.slide = 'backwords'
+                // }
+
                 this.activeSlide = numeroIndice
+
+                // setTimeout(() => {
+                    
+                // }, 1000);
             },
         },
     }
@@ -36,7 +48,8 @@
             <div class="container-fluid">
                 <div class="row flex-nowrap align-items-center">
 
-                    <div class="col-6 p-4" v-for="(review, index) in store.AboutSlider" :key="index" v-show="this.activeSlide === index || index === this.activeSlide + 1">
+                    <div class="col-6 p-4" v-for="(review, index) in store.AboutSlider" :key="index" :class="this.activeSlide === 1 ? 'swipe-forward' : '' || this.activeSlide === 2 ? 'swipe-forward-two' : '' || this.activeSlide === 3 ? 'swipe-forward-three' : '' ">
+                        <!-- v-show="this.activeSlide === index || index === this.activeSlide + 1" -->
 
                         <div class="ms-box">
                             <!-- dati utente -->
@@ -87,10 +100,12 @@
         padding: 2em 0;
 
         .row{
-            transition: all 1s;
+            position: relative;
+            height: 300px;
         }
 
         .col-6{
+            transition: all 1s;
 
             .ms-box{
                 box-shadow: 0 0 20px rgba(51, 51, 51, 0.1);
@@ -155,8 +170,20 @@
         }
     }
 
-    .swipe{
-        transform: translateX(-90px);
+    .swipe-forward{
+        transform: translateX(-650px);
+    }
+
+    .swipe-forward-two{
+        transform: translateX(-1300px);
+    }
+
+    .swipe-forward-three{
+        transform: translateX(-1950px);
+    }
+
+    .swipe-backwords{
+        transform: translateX(0px);
     }
 
     h2{

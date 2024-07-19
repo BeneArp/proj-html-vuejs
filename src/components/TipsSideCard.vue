@@ -21,7 +21,7 @@
 
 <template>
 
-    <div class="col-3 g-0" v-for="(post, index) in store.SideCards">
+    <div class="col-3 g-0" v-for="(post, index) in store.SideCards" :class="index === 1 ? 'align-self-start' : '' ">
         <a :href="post.url">
             <!-- immagine -->
             <div>

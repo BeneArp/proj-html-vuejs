@@ -1,14 +1,43 @@
 <script>
+    import BreadCrumbs from '../components/AppAboutComponents/BreadCrumbs.vue'
+    import Info from '../components/AppContactsComponents/Info.vue'
 
     export default{
-        name: "AppContacts"
+        name: "AppContacts",
+
+        data(){
+            return{
+                BreadCrumbsPath:[
+                    {
+                        name: 'home',
+                        text: 'Home'
+                    },
+                    {
+                        text: '/'
+                    },
+                    {
+                        name: 'contact me',
+                        text: 'Contact Us'
+                    },
+                ],
+            }
+        },  
+
+        components:{
+            BreadCrumbs,
+            Info,
+        }
     }
 
 </script>
 
 <template>
 
-    <h2>Contacts</h2>
+    <BreadCrumbs :info="BreadCrumbsPath"/>
+
+    <section>
+        <Info/>
+    </section>
 
 </template>
 
