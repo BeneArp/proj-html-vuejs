@@ -1,6 +1,7 @@
 <script>
     import BreadCrumbs from '../components/AppAboutComponents/BreadCrumbs.vue'
     import Info from '../components/AppContactsComponents/Info.vue'
+    import MapContacts from '../components/AppContactsComponents/MapContacts.vue';
 
     export default{
         name: "AppContacts",
@@ -26,6 +27,7 @@
         components:{
             BreadCrumbs,
             Info,
+            MapContacts,
         }
     }
 
@@ -37,6 +39,7 @@
 
     <section>
         <Info/>
+        <MapContacts />
     </section>
 
 </template>
