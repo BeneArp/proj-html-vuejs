@@ -46,18 +46,14 @@ export default {
     </div>
 
     <!-- slider -->
-    <div class="row justify-content-center">
+    <div id="slider-wrapper">
         <div class="col-11">
 
 
             <!-- slider cards -->
-            <div class="col-12 d-flex justify-content-center">
+            <div class="row flex-nowrap align-items-center">
 
-                <!-- slider dinamico -->
-                <!-- <div class="ms-card" v-for="(card, i) in store.testimonials" :key="i" :class="activeSlide === i ? 'active' : 'no-display'">
-                    <p>{{ card.name }}</p>
-
-                </div> -->
+                
 
                 <!-- slider statico -->
                 <div class="ms-card">
@@ -106,7 +102,6 @@ export default {
 @use "@fortawesome/fontawesome-free/css/all.min.css" as *;
 
 section {
-    
     background-color: $light-grey;
     
 
@@ -123,16 +118,19 @@ section {
         font-size: 40px;
     }
 
+    #slider-wrapper{
+        overflow: hidden;
+        padding: 2em 0;
+    }
     .col-11 {
         // background-color: green;
         // height: 400px;
         
 
-        .col-12 {
-            
+        .row {
+            position: relative;
             // background-color: bisque;
             gap: 20px;
-            overflow: hidden;
 
             .ms-card {
                 flex-basis: calc(100% / 3 - 20px);
