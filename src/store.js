@@ -494,13 +494,13 @@ export const store = reactive({
             firstRow: [
                 {
                     imageEvent: 'src/assets/images/artist-event-04-250x300.jpg',
-                    dataEvent: 'Apr 22, 2021 ',
+                    dataEvent: 'APR 22, 2021 ',
                     nameEvent: 'Storytelling Workshop',
                     location: ' Texas, US '
                 },
                 {
                     imageEvent: 'src/assets/images/artist-event-03-250x300.jpg',
-                    dataEvent: 'Oct 10, 2020 ',
+                    dataEvent: 'OCT 10, 2020 ',
                     nameEvent: 'Painting Art Contest 2020',
                     location: ' New York, US '
                 },
@@ -511,13 +511,13 @@ export const store = reactive({
             secondRow: [
                 {
                     imageEvent: 'src/assets/images/artist-event-02-250x300.jpg ',
-                    dataEvent: 'Nov 23, 2020 ',
+                    dataEvent: 'NOV 23, 2020 ',
                     nameEvent: 'International Art Fair 2020',
                     location: 'Hamburg, Germany'
                 },
                 {
                     imageEvent: 'src/assets/images/artist-event-01-250x300.jpg',
-                    dataEvent: 'Dec 15, 2020',
+                    dataEvent: 'DEC 15, 2020',
                     nameEvent: 'Street Performance: Call for Artist',
                     location: 'Illinois, US'
                 },
