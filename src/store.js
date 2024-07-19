@@ -343,55 +343,43 @@ export const store = reactive({
 
     // dati dedl menu header
     menuHeader: [
-        {
-            text: 'Home',
-            url: [
-                {
-                    link: 'link pagina',
-                },
-                {
-                    link: 'link pagina',
-                },
-                {
-                    link: 'link pagina',
-                },
-            ]
-        },
+        // {
+        //     text: 'Home',
+        //     // url: [
+        //     //     {
+        //     //         link: 'link pagina',
+        //     //     },
+        //     //     {
+        //     //         link: 'link pagina',
+        //     //     },
+        //     //     {
+        //     //         link: 'link pagina',
+        //     //     },
+        //     // ]
+        // },
         {
             text: 'Pages',
             url: [
                 {
-                    link: 'Start Here',
+                    name: 'about us',
+                    text: 'About Us'
                 },
                 {
-                    link: 'Success stori',
+                    name: 'contact me',
+                    text: 'Contact Us'
                 },
-                {
-                    link: 'About me',
-                },
-                {
-                    link: 'About us 01',
-                },
-                {
-                    link: 'Contact me',
-                },
-                {
-                    link: 'Contact us',
-                }
-
             ]
         },
         {
             text: 'Courses',
             url: [
                 {
-                    link: 'link pagina',
+                    name: 'about us',
+                    text: 'About Us'
                 },
                 {
-                    link: 'link pagina',
-                },
-                {
-                    link: 'link pagina',
+                    name: 'contact me',
+                    text: 'Contact Us'
                 },
             ]
         },
@@ -399,13 +387,12 @@ export const store = reactive({
             text: 'Features',
             url: [
                 {
-                    link: 'link pagina',
+                    name: 'about us',
+                    text: 'About Us'
                 },
                 {
-                    link: 'link pagina',
-                },
-                {
-                    link: 'link pagina',
+                    name: 'contact me',
+                    text: 'Contact Us'
                 },
             ]
         },
@@ -413,13 +400,12 @@ export const store = reactive({
             text: 'Blog',
             url: [
                 {
-                    link: 'link pagina',
+                    name: 'about us',
+                    text: 'About Us'
                 },
                 {
-                    link: 'link pagina',
-                },
-                {
-                    link: 'link pagina',
+                    name: 'contact me',
+                    text: 'Contact Us'
                 },
             ]
         },
@@ -427,13 +413,12 @@ export const store = reactive({
             text: 'Shop',
             url: [
                 {
-                    link: 'link pagina',
+                    name: 'about us',
+                    text: 'About Us'
                 },
                 {
-                    link: 'link pagina',
-                },
-                {
-                    link: 'link pagina',
+                    name: 'contact me',
+                    text: 'Contact Us'
                 },
             ]
         },

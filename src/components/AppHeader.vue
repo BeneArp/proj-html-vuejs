@@ -34,15 +34,26 @@ import * as bootstrap from 'bootstrap'
                 </div>
                 <div class="col-5">
                     <ul class="title-menu">
-                        <li v-for="item in store.menuHeader">
+                        <li>
+                            <router-link :to="{ name: 'home'}" class="title-link">
+                                Home
+                                <div class="dynamic-border-bottom"></div>
+                            </router-link>
+                        </li>
+                        <li v-for="(item, index) in store.menuHeader">
                             <a class="title-link" href="#">{{item.text}}
                                 <div class="dynamic-border-bottom"></div>
                             </a>
                             <div class="dropdown">
                                 <i class="fa-solid fa-chevron-down chevron button btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                 <ul class="dropdown-menu" style="">
-                                    <li v-for="link in item.url" :key="link.link" href="link.url">
+                                    <!-- <li v-for="link in item.url" :key="link.link" href="link.url">
                                         <a class="dropdown-item">{{link.link}}</a>
+                                    </li> -->
+                                    <li v-for="link in item.url">
+                                        <router-link :to="{ name: link.name }" class="dropdown-item">
+                                            {{link.text}}
+                                        </router-link>
                                     </li>
                                 </ul>
                             </div>
@@ -56,25 +67,6 @@ import * as bootstrap from 'bootstrap'
                 </div>
             </nav>
         </section>
-        <div>
-            <ul>
-                <li>
-                    <router-link :to="{ name: 'home'}">
-                        Home
-                    </router-link>
-                </li>
-                <li>
-                    <router-link :to="{ name: 'about us' }">
-                        About Us
-                    </router-link>
-                </li>
-                <li>
-                    <router-link :to="{ name: 'contact me' }">
-                        Contact Me
-                    </router-link>
-                </li>
-            </ul>
-        </div>
 
     </header>
 </template>
@@ -88,7 +80,6 @@ import * as bootstrap from 'bootstrap'
     header {
         background-color: $light-grey;
         max-width: 100vw;
-        overflow: hidden;
         .container {
             width: 100vw;
         }
