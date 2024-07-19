@@ -7,8 +7,6 @@ export default {
         return{
             store,
 
-            // proprietà per valore base statistica
-            counter: 0,
         }
     },
     
@@ -16,10 +14,23 @@ export default {
     methods: {
 
         increment(stat) {
-            // const target = store.stats[this.index].data;
-            const interval = 5;
-            const step = 1;
 
+            // intervallo di tempo in millisecondi
+            let interval = 5;
+            // passo di incremento
+            let step = 1;
+
+            // controllo per diversa velocità in base a grandezza del numero
+            if (stat.data >= 1000 && stat.data < 2000) {
+                step = 3; 
+            } else if (stat.data > 2000) {
+                step = 5
+                interval = 2;
+            } else if (stat.data <= 200) {
+                interval = 17;
+            }
+
+            // se counter minore del data continua incremento altrimenti si ferma
             const timer = setInterval(() => {
                 if (stat.counter < stat.data) {
                     stat.counter += step;
@@ -31,6 +42,7 @@ export default {
         }
     },
     mounted() {
+        // chiamo funzione al caricamento della pagina per ogni oggetto dell'array
         store.stats.forEach(stat => this.increment(stat));
         
     },
