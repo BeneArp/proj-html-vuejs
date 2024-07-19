@@ -182,9 +182,9 @@
         transform: translateX(-1950px);
     }
 
-    .swipe-backwords{
-        transform: translateX(0px);
-    }
+    // .swipe-backwords{
+    //     transform: translateX(0px);
+    // }
 
     h2{
         color: #20ad96;
