@@ -1,7 +1,12 @@
 <script>
+    import InfoCard from './InfoCard.vue';
 
     export default{
-        name: 'info'
+        name: 'info',
+
+        components:{
+            InfoCard
+        }
     }
 
 </script>
@@ -14,9 +19,7 @@
         </div>
 
         <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
+            <InfoCard/>
         </div>
     </div>
 
@@ -26,27 +29,15 @@
 
     .container-lg{
         // debug
-        background-color: lightseagreen;
+        // background-color: lightseagreen;
 
         h2{
             font-weight: bold;
             text-align: center;
             width: 60%;
             margin: 2em auto;
-            // debug
-            border: 2px solid violet;
         }
 
-        .row{
-            // debug
-            background-color: lightgreen;
-            height: 400px;
-
-            .col-4{
-                // debug
-                border: 2px solid green;
-            }
-        }
     }
 
 </style>

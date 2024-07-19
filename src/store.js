@@ -194,6 +194,35 @@ export const store = reactive({
         },
     ],
 
+    // CONTACTS DATI
+    InfoCard:[
+        {
+            title: 'Address',
+            text:[
+                '1800 Abbot Kinney Blvd. Unit D & E Venice'
+            ],
+            classi: 'fa-solid fa-location-dot'
+        },
+
+        {
+            title: 'Contact',
+            text:[
+                'Mobile: (+88) - 1990 - 6886',
+                'Hotline: 1800 - 1102',
+                'Mail: contact@maxcoach.com'
+            ],
+            classi: 'fa-solid fa-phone'
+        },
+
+        {
+            title: 'Hour of operation',
+            text:[
+                'Monday - Friday: 09:00 - 20:00',
+                'Sunday & Saturday: 10:30 - 22:00',
+            ],
+            classi: 'fa-regular fa-clock'
+        },
+    ],
 
     // struttura dati per statistiche crescenti
     stats: [
