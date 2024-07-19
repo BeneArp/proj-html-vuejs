@@ -1,7 +1,5 @@
 <script>
 import {store} from '../store';
-// Import all of Bootstrap's JS
-// import * as bootstrap from 'bootstrap';
 
 export default {
     name: 'SliderAppHome.vue',
@@ -20,6 +18,7 @@ export default {
         // funzione per click su thumbnail
         showImage(currentImage) {
             this.activeSlide = currentImage;
+
         },
     }
 }
@@ -47,35 +46,38 @@ export default {
 
     <!-- slider -->
     <div id="slider-wrapper">
-        <div class="col-11">
+        <div class="container-fluid">
 
 
             <!-- slider cards -->
-            <div class="row flex-nowrap align-items-center">
+            <div class="row flex-nowrap align-items-center ">
 
                 
+                <div class="col-4 " v-for="(slide, index) in store.testimonials" :key="index" :class="this.activeSlide === 0 ? 'swipe-forward-zero' : '' || this.activeSlide === 1 ? 'swipe-forward' : '' || this.activeSlide === 2 ? 'swipe-forward-two' : '' || this.activeSlide === 3 ? 'swipe-forward-three' : '' ">
 
-                <!-- slider statico -->
-                <div class="ms-card">
+                    <div class="ms-card">
 
-                    <div class="text">
-                        <h4>{{ store.testimonials[activeSlide].title }}</h4>
-                        <p>{{ store.testimonials[activeSlide].text }}</p>
-                    </div>
-
-                    <div class="info d-flex align-items-center">
-                        <div class="info-img">
-                            <img :src="store.testimonials[activeSlide].image" :alt="store.testimonials[activeSlide].name">
+                        <div class="text">
+                            <h4>{{ slide.title }}</h4>
+                            <p>{{ slide.text }}</p>
                         </div>
 
-                        <div class="info-text">
-                            <h5>{{store.testimonials[activeSlide].name}}</h5>
-                            <p>{{store.testimonials[activeSlide].job}}</p>
+                        <div class="info d-flex align-items-center">
+                            <div class="info-img">
+                                <img :src="slide.image" :alt="slide.name">
+                            </div>
 
+                            <div class="info-text">
+                                <h5>{{slide.name}}</h5>
+                                <p>{{slide.job}}</p>
+
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
+                
+                
 
             </div>
 
@@ -97,7 +99,6 @@ export default {
 
 
 <style lang="scss" scoped>
-// @use '../styles/general.scss';
 @use '../styles/partials/variables' as *;
 @use "@fortawesome/fontawesome-free/css/all.min.css" as *;
 
@@ -122,27 +123,21 @@ section {
         overflow: hidden;
         padding: 2em 0;
     }
-    .col-11 {
-        // background-color: green;
-        // height: 400px;
+    .container-fluid {
         
 
         .row {
-            position: relative;
-            // background-color: bisque;
-            gap: 20px;
 
-            .ms-card {
-                flex-basis: calc(100% / 3 - 20px);
+            .col-4 {
+                transition: all 1s;
+
+                .ms-card {
                 height: 400px;
                 flex-shrink: 0;
                 padding: 30px;
                 transition: transform 0.5s ease;
                 background-color: white;
                 border-radius: 5px;
-
-                // background-color: blue;
-                // border: 1px solid red;
 
                 .text {
                     margin-bottom: 50px;
@@ -179,21 +174,28 @@ section {
                 }
             }
 
-            .active {
-                background-color: blue;
-                transform: translateX(100%);
+            }
+            
+
+            .swipe-forward{
+                transform: translateX(0);
             }
 
-            .no-display {
-                background-color: yellow;
-                opacity: 0.5;
-                transform: translateX(100%);
+            .swipe-forward-two{
+                transform: translateX(-474px);
+            }
+
+            .swipe-forward-three{
+                transform: translateX(-948px);
+            }
+
+            .swipe-forward-zero{
+                transform: translateX(474px);
             }
         }
 
         .controls {
             padding: 50px 0;
-            // background-color: black;
 
             .dot {
                 display: inline-block;
