@@ -95,16 +95,17 @@
             }
         }
         .col-3 {
-            // border: solid black 0.01px;
-            min-height: 100px;
+            position: relative;
+            min-height: 500px;
             margin-bottom: 2rem;
             position: relative;
             .info-art {
+                position: absolute;
                 width: 90%;
                 padding: 1.8rem;
-                &:hover {
-                    outline: solid $orange 0.1rem;
-                }
+                background-color: $white;
+                transition: all 0.3s;
+
                 .price, .artwork-title  {
                     font-size: 1.2rem;
                     font-weight: bold;
@@ -139,7 +140,12 @@
                 }
             }
 
+            &:hover .info-art{
+                outline: solid $orange 0.1rem;
+                transform: translate(0, -60px);
+            }
         }
+
         .bottone {
             margin: auto;
             button {
